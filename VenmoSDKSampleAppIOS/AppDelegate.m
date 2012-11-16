@@ -1,26 +1,24 @@
-//
-//  AppDelegate.m
-//  VenmoSDKSampleAppIOS
-//
-//  Created by John Graham on 11/16/12.
-//  Copyright (c) 2012 Venmo. All rights reserved.
-//
-
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+#import "FSNConnection.h"
+#import "MerchantAppVenmoSDKDefines.h"
+#import "TableViewController.h"
 
 @implementation AppDelegate
+
+@synthesize tableViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    self.tableViewController = [[TableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    
+    self.window.rootViewController = self.tableViewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+#pragma mark - AppDelegate methods
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -30,13 +28,15 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    NSLog(@"applicationWillEnterForeground called");
+    [tableViewController refreshVDKClient];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

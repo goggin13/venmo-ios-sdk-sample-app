@@ -1,0 +1,3 @@
+[submodule "Libraries/FSNetworking"]
+	path = Libraries/FSNetworking
+	url = git://github.com/foursquare/FSNetworking.git

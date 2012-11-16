@@ -16,8 +16,24 @@
 		9C3A63F71656DC9E004C7F73 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63F61656DC9E004C7F73 /* Default.png */; };
 		9C3A63F91656DC9E004C7F73 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63F81656DC9E004C7F73 /* Default@2x.png */; };
 		9C3A63FB1656DC9E004C7F73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */; };
-		9C3A63FE1656DC9E004C7F73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A63FD1656DC9E004C7F73 /* ViewController.m */; };
-		9C3A64011656DC9E004C7F73 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63FF1656DC9E004C7F73 /* ViewController.xib */; };
+		9C3A64091656DF29004C7F73 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A64081656DF29004C7F73 /* TableViewController.m */; };
+		9C3A641E1656E115004C7F73 /* BlueButtonBackgroundNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A640E1656E115004C7F73 /* BlueButtonBackgroundNormal.png */; };
+		9C3A641F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A640F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png */; };
+		9C3A64201656E115004C7F73 /* CheckboxCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64101656E115004C7F73 /* CheckboxCheck.png */; };
+		9C3A64211656E115004C7F73 /* CheckboxCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64111656E115004C7F73 /* CheckboxCheck@2x.png */; };
+		9C3A64221656E115004C7F73 /* CheckboxUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64121656E115004C7F73 /* CheckboxUnchecked.png */; };
+		9C3A64231656E115004C7F73 /* CheckboxUnchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64131656E115004C7F73 /* CheckboxUnchecked@2x.png */; };
+		9C3A64241656E115004C7F73 /* libVenmoSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A64141656E115004C7F73 /* libVenmoSDK.a */; };
+		9C3A64251656E115004C7F73 /* ModalClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64151656E115004C7F73 /* ModalClose.png */; };
+		9C3A64261656E115004C7F73 /* ModalClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64161656E115004C7F73 /* ModalClose@2x.png */; };
+		9C3A64271656E115004C7F73 /* UseCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64171656E115004C7F73 /* UseCard.png */; };
+		9C3A64281656E115004C7F73 /* UseCard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64181656E115004C7F73 /* UseCard@2x.png */; };
+		9C3A64291656E115004C7F73 /* VenmoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A641C1656E115004C7F73 /* VenmoLogo.png */; };
+		9C3A642A1656E115004C7F73 /* VenmoLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */; };
+		9C3A64311656E129004C7F73 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A642C1656E129004C7F73 /* FSN_categories.m */; };
+		9C3A64321656E129004C7F73 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A642E1656E129004C7F73 /* FSNConnection.m */; };
+		9C3A64331656E129004C7F73 /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A64301656E129004C7F73 /* FSNData.m */; };
+		9C3A64351656E141004C7F73 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A64341656E141004C7F73 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +50,32 @@
 		9C3A63F61656DC9E004C7F73 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9C3A63F81656DC9E004C7F73 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9C3A63FC1656DC9E004C7F73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9C3A63FD1656DC9E004C7F73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9C3A64001656DC9E004C7F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		9C3A64071656DF29004C7F73 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		9C3A64081656DF29004C7F73 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		9C3A640A1656DF45004C7F73 /* MerchantAppVenmoSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantAppVenmoSDKDefines.h; sourceTree = "<group>"; };
+		9C3A640E1656E115004C7F73 /* BlueButtonBackgroundNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueButtonBackgroundNormal.png; path = "Libraries/Venmo SDK/BlueButtonBackgroundNormal.png"; sourceTree = "<group>"; };
+		9C3A640F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BlueButtonBackgroundNormal@2x.png"; path = "Libraries/Venmo SDK/BlueButtonBackgroundNormal@2x.png"; sourceTree = "<group>"; };
+		9C3A64101656E115004C7F73 /* CheckboxCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheckboxCheck.png; path = "Libraries/Venmo SDK/CheckboxCheck.png"; sourceTree = "<group>"; };
+		9C3A64111656E115004C7F73 /* CheckboxCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CheckboxCheck@2x.png"; path = "Libraries/Venmo SDK/CheckboxCheck@2x.png"; sourceTree = "<group>"; };
+		9C3A64121656E115004C7F73 /* CheckboxUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheckboxUnchecked.png; path = "Libraries/Venmo SDK/CheckboxUnchecked.png"; sourceTree = "<group>"; };
+		9C3A64131656E115004C7F73 /* CheckboxUnchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CheckboxUnchecked@2x.png"; path = "Libraries/Venmo SDK/CheckboxUnchecked@2x.png"; sourceTree = "<group>"; };
+		9C3A64141656E115004C7F73 /* libVenmoSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVenmoSDK.a; path = "Libraries/Venmo SDK/libVenmoSDK.a"; sourceTree = "<group>"; };
+		9C3A64151656E115004C7F73 /* ModalClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ModalClose.png; path = "Libraries/Venmo SDK/ModalClose.png"; sourceTree = "<group>"; };
+		9C3A64161656E115004C7F73 /* ModalClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ModalClose@2x.png"; path = "Libraries/Venmo SDK/ModalClose@2x.png"; sourceTree = "<group>"; };
+		9C3A64171656E115004C7F73 /* UseCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UseCard.png; path = "Libraries/Venmo SDK/UseCard.png"; sourceTree = "<group>"; };
+		9C3A64181656E115004C7F73 /* UseCard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UseCard@2x.png"; path = "Libraries/Venmo SDK/UseCard@2x.png"; sourceTree = "<group>"; };
+		9C3A64191656E115004C7F73 /* VDKCardWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKCardWidget.h; path = "Libraries/Venmo SDK/VDKCardWidget.h"; sourceTree = "<group>"; };
+		9C3A641A1656E115004C7F73 /* VDKCheckboxWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKCheckboxWidget.h; path = "Libraries/Venmo SDK/VDKCheckboxWidget.h"; sourceTree = "<group>"; };
+		9C3A641B1656E115004C7F73 /* VDKClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKClient.h; path = "Libraries/Venmo SDK/VDKClient.h"; sourceTree = "<group>"; };
+		9C3A641C1656E115004C7F73 /* VenmoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogo.png; path = "Libraries/Venmo SDK/VenmoLogo.png"; sourceTree = "<group>"; };
+		9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VenmoLogo@2x.png"; path = "Libraries/Venmo SDK/VenmoLogo@2x.png"; sourceTree = "<group>"; };
+		9C3A642B1656E129004C7F73 /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = Libraries/FSNetworking/src/FSN_categories.h; sourceTree = "<group>"; };
+		9C3A642C1656E129004C7F73 /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = Libraries/FSNetworking/src/FSN_categories.m; sourceTree = "<group>"; };
+		9C3A642D1656E129004C7F73 /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNConnection.h; path = Libraries/FSNetworking/src/FSNConnection.h; sourceTree = "<group>"; };
+		9C3A642E1656E129004C7F73 /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = Libraries/FSNetworking/src/FSNConnection.m; sourceTree = "<group>"; };
+		9C3A642F1656E129004C7F73 /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = Libraries/FSNetworking/src/FSNData.h; sourceTree = "<group>"; };
+		9C3A64301656E129004C7F73 /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = Libraries/FSNetworking/src/FSNData.m; sourceTree = "<group>"; };
+		9C3A64341656E141004C7F73 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +83,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3A64351656E141004C7F73 /* Security.framework in Frameworks */,
 				9C3A63E51656DC9E004C7F73 /* UIKit.framework in Frameworks */,
 				9C3A63E71656DC9E004C7F73 /* Foundation.framework in Frameworks */,
 				9C3A63E91656DC9E004C7F73 /* CoreGraphics.framework in Frameworks */,
+				9C3A64241656E115004C7F73 /* libVenmoSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +97,9 @@
 		9C3A63D51656DC9E004C7F73 = {
 			isa = PBXGroup;
 			children = (
+				9C3A64341656E141004C7F73 /* Security.framework */,
 				9C3A63EA1656DC9E004C7F73 /* VenmoSDKSampleAppIOS */,
+				9C3A640B1656E0F0004C7F73 /* Libraries */,
 				9C3A63E31656DC9E004C7F73 /* Frameworks */,
 				9C3A63E11656DC9E004C7F73 /* Products */,
 			);
@@ -85,9 +128,9 @@
 			children = (
 				9C3A63F31656DC9E004C7F73 /* AppDelegate.h */,
 				9C3A63F41656DC9E004C7F73 /* AppDelegate.m */,
-				9C3A63FC1656DC9E004C7F73 /* ViewController.h */,
-				9C3A63FD1656DC9E004C7F73 /* ViewController.m */,
-				9C3A63FF1656DC9E004C7F73 /* ViewController.xib */,
+				9C3A64071656DF29004C7F73 /* TableViewController.h */,
+				9C3A64081656DF29004C7F73 /* TableViewController.m */,
+				9C3A640A1656DF45004C7F73 /* MerchantAppVenmoSDKDefines.h */,
 				9C3A63EB1656DC9E004C7F73 /* Supporting Files */,
 			);
 			path = VenmoSDKSampleAppIOS;
@@ -105,6 +148,51 @@
 				9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C3A640B1656E0F0004C7F73 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9C3A640C1656E0F8004C7F73 /* Venmo SDK */,
+				9C3A640D1656E100004C7F73 /* FSNetworking */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		9C3A640C1656E0F8004C7F73 /* Venmo SDK */ = {
+			isa = PBXGroup;
+			children = (
+				9C3A640E1656E115004C7F73 /* BlueButtonBackgroundNormal.png */,
+				9C3A640F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png */,
+				9C3A64101656E115004C7F73 /* CheckboxCheck.png */,
+				9C3A64111656E115004C7F73 /* CheckboxCheck@2x.png */,
+				9C3A64121656E115004C7F73 /* CheckboxUnchecked.png */,
+				9C3A64131656E115004C7F73 /* CheckboxUnchecked@2x.png */,
+				9C3A64141656E115004C7F73 /* libVenmoSDK.a */,
+				9C3A64151656E115004C7F73 /* ModalClose.png */,
+				9C3A64161656E115004C7F73 /* ModalClose@2x.png */,
+				9C3A64171656E115004C7F73 /* UseCard.png */,
+				9C3A64181656E115004C7F73 /* UseCard@2x.png */,
+				9C3A64191656E115004C7F73 /* VDKCardWidget.h */,
+				9C3A641A1656E115004C7F73 /* VDKCheckboxWidget.h */,
+				9C3A641B1656E115004C7F73 /* VDKClient.h */,
+				9C3A641C1656E115004C7F73 /* VenmoLogo.png */,
+				9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */,
+			);
+			name = "Venmo SDK";
+			sourceTree = "<group>";
+		};
+		9C3A640D1656E100004C7F73 /* FSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9C3A642B1656E129004C7F73 /* FSN_categories.h */,
+				9C3A642C1656E129004C7F73 /* FSN_categories.m */,
+				9C3A642D1656E129004C7F73 /* FSNConnection.h */,
+				9C3A642E1656E129004C7F73 /* FSNConnection.m */,
+				9C3A642F1656E129004C7F73 /* FSNData.h */,
+				9C3A64301656E129004C7F73 /* FSNData.m */,
+			);
+			name = FSNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +250,18 @@
 				9C3A63F71656DC9E004C7F73 /* Default.png in Resources */,
 				9C3A63F91656DC9E004C7F73 /* Default@2x.png in Resources */,
 				9C3A63FB1656DC9E004C7F73 /* Default-568h@2x.png in Resources */,
-				9C3A64011656DC9E004C7F73 /* ViewController.xib in Resources */,
+				9C3A641E1656E115004C7F73 /* BlueButtonBackgroundNormal.png in Resources */,
+				9C3A641F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png in Resources */,
+				9C3A64201656E115004C7F73 /* CheckboxCheck.png in Resources */,
+				9C3A64211656E115004C7F73 /* CheckboxCheck@2x.png in Resources */,
+				9C3A64221656E115004C7F73 /* CheckboxUnchecked.png in Resources */,
+				9C3A64231656E115004C7F73 /* CheckboxUnchecked@2x.png in Resources */,
+				9C3A64251656E115004C7F73 /* ModalClose.png in Resources */,
+				9C3A64261656E115004C7F73 /* ModalClose@2x.png in Resources */,
+				9C3A64271656E115004C7F73 /* UseCard.png in Resources */,
+				9C3A64281656E115004C7F73 /* UseCard@2x.png in Resources */,
+				9C3A64291656E115004C7F73 /* VenmoLogo.png in Resources */,
+				9C3A642A1656E115004C7F73 /* VenmoLogo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +274,10 @@
 			files = (
 				9C3A63F11656DC9E004C7F73 /* main.m in Sources */,
 				9C3A63F51656DC9E004C7F73 /* AppDelegate.m in Sources */,
-				9C3A63FE1656DC9E004C7F73 /* ViewController.m in Sources */,
+				9C3A64091656DF29004C7F73 /* TableViewController.m in Sources */,
+				9C3A64311656E129004C7F73 /* FSN_categories.m in Sources */,
+				9C3A64321656E129004C7F73 /* FSNConnection.m in Sources */,
+				9C3A64331656E129004C7F73 /* FSNData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +290,6 @@
 				9C3A63EE1656DC9E004C7F73 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9C3A63FF1656DC9E004C7F73 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C3A64001656DC9E004C7F73 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -256,6 +350,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Prefix.pch";
 				INFOPLIST_FILE = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/Venmo SDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -267,6 +365,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Prefix.pch";
 				INFOPLIST_FILE = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/Venmo SDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
