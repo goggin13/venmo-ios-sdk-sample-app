@@ -30,10 +30,10 @@
 		9C3A64281656E115004C7F73 /* UseCard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64181656E115004C7F73 /* UseCard@2x.png */; };
 		9C3A64291656E115004C7F73 /* VenmoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A641C1656E115004C7F73 /* VenmoLogo.png */; };
 		9C3A642A1656E115004C7F73 /* VenmoLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */; };
-		9C3A64311656E129004C7F73 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A642C1656E129004C7F73 /* FSN_categories.m */; };
-		9C3A64321656E129004C7F73 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A642E1656E129004C7F73 /* FSNConnection.m */; };
-		9C3A64331656E129004C7F73 /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A64301656E129004C7F73 /* FSNData.m */; };
 		9C3A64351656E141004C7F73 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A64341656E141004C7F73 /* Security.framework */; };
+		9C6860E1165F504F000568A8 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6860DC165F504F000568A8 /* FSN_categories.m */; };
+		9C6860E2165F504F000568A8 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6860DE165F504F000568A8 /* FSNConnection.m */; };
+		9C6860E3165F504F000568A8 /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6860E0165F504F000568A8 /* FSNData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,13 +69,13 @@
 		9C3A641B1656E115004C7F73 /* VDKClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKClient.h; path = "Libraries/Venmo SDK/VDKClient.h"; sourceTree = "<group>"; };
 		9C3A641C1656E115004C7F73 /* VenmoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogo.png; path = "Libraries/Venmo SDK/VenmoLogo.png"; sourceTree = "<group>"; };
 		9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VenmoLogo@2x.png"; path = "Libraries/Venmo SDK/VenmoLogo@2x.png"; sourceTree = "<group>"; };
-		9C3A642B1656E129004C7F73 /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = Libraries/FSNetworking/src/FSN_categories.h; sourceTree = "<group>"; };
-		9C3A642C1656E129004C7F73 /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = Libraries/FSNetworking/src/FSN_categories.m; sourceTree = "<group>"; };
-		9C3A642D1656E129004C7F73 /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNConnection.h; path = Libraries/FSNetworking/src/FSNConnection.h; sourceTree = "<group>"; };
-		9C3A642E1656E129004C7F73 /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = Libraries/FSNetworking/src/FSNConnection.m; sourceTree = "<group>"; };
-		9C3A642F1656E129004C7F73 /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = Libraries/FSNetworking/src/FSNData.h; sourceTree = "<group>"; };
-		9C3A64301656E129004C7F73 /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = Libraries/FSNetworking/src/FSNData.m; sourceTree = "<group>"; };
 		9C3A64341656E141004C7F73 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9C6860DB165F504F000568A8 /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = Libraries/FSNetworking/FSN_categories.h; sourceTree = "<group>"; };
+		9C6860DC165F504F000568A8 /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = Libraries/FSNetworking/FSN_categories.m; sourceTree = "<group>"; };
+		9C6860DD165F504F000568A8 /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNConnection.h; path = Libraries/FSNetworking/FSNConnection.h; sourceTree = "<group>"; };
+		9C6860DE165F504F000568A8 /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = Libraries/FSNetworking/FSNConnection.m; sourceTree = "<group>"; };
+		9C6860DF165F504F000568A8 /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = Libraries/FSNetworking/FSNData.h; sourceTree = "<group>"; };
+		9C6860E0165F504F000568A8 /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = Libraries/FSNetworking/FSNData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,6 @@
 				9C3A640A1656DF45004C7F73 /* MerchantAppVenmoSDKDefines.h */,
 				9C3A63EB1656DC9E004C7F73 /* Supporting Files */,
 			);
-			name = VenmoIOSSDKSampleApp;
 			path = VenmoIOSSDKSampleApp;
 			sourceTree = "<group>";
 		};
@@ -186,12 +185,12 @@
 		9C3A640D1656E100004C7F73 /* FSNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				9C3A642B1656E129004C7F73 /* FSN_categories.h */,
-				9C3A642C1656E129004C7F73 /* FSN_categories.m */,
-				9C3A642D1656E129004C7F73 /* FSNConnection.h */,
-				9C3A642E1656E129004C7F73 /* FSNConnection.m */,
-				9C3A642F1656E129004C7F73 /* FSNData.h */,
-				9C3A64301656E129004C7F73 /* FSNData.m */,
+				9C6860DB165F504F000568A8 /* FSN_categories.h */,
+				9C6860DC165F504F000568A8 /* FSN_categories.m */,
+				9C6860DD165F504F000568A8 /* FSNConnection.h */,
+				9C6860DE165F504F000568A8 /* FSNConnection.m */,
+				9C6860DF165F504F000568A8 /* FSNData.h */,
+				9C6860E0165F504F000568A8 /* FSNData.m */,
 			);
 			name = FSNetworking;
 			sourceTree = "<group>";
@@ -276,9 +275,9 @@
 				9C3A63F11656DC9E004C7F73 /* main.m in Sources */,
 				9C3A63F51656DC9E004C7F73 /* AppDelegate.m in Sources */,
 				9C3A64091656DF29004C7F73 /* TableViewController.m in Sources */,
-				9C3A64311656E129004C7F73 /* FSN_categories.m in Sources */,
-				9C3A64321656E129004C7F73 /* FSNConnection.m in Sources */,
-				9C3A64331656E129004C7F73 /* FSNData.m in Sources */,
+				9C6860E1165F504F000568A8 /* FSN_categories.m in Sources */,
+				9C6860E2165F504F000568A8 /* FSNConnection.m in Sources */,
+				9C6860E3165F504F000568A8 /* FSNData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
