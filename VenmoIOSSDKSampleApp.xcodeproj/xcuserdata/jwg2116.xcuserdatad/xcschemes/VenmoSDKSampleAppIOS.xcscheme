@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C3A63DF1656DC9E004C7F73"
-               BuildableName = "VenmoSDKSampleAppIOS.app"
-               BlueprintName = "VenmoSDKSampleAppIOS"
-               ReferencedContainer = "container:VenmoSDKSampleAppIOS.xcodeproj">
+               BuildableName = "VenmoIOSSDKSampleApp.app"
+               BlueprintName = "VenmoIOSSDKSampleApp"
+               ReferencedContainer = "container:VenmoIOSSDKSampleApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C3A63DF1656DC9E004C7F73"
-            BuildableName = "VenmoSDKSampleAppIOS.app"
-            BlueprintName = "VenmoSDKSampleAppIOS"
-            ReferencedContainer = "container:VenmoSDKSampleAppIOS.xcodeproj">
+            BuildableName = "VenmoIOSSDKSampleApp.app"
+            BlueprintName = "VenmoIOSSDKSampleApp"
+            ReferencedContainer = "container:VenmoIOSSDKSampleApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C3A63DF1656DC9E004C7F73"
-            BuildableName = "VenmoSDKSampleAppIOS.app"
-            BlueprintName = "VenmoSDKSampleAppIOS"
-            ReferencedContainer = "container:VenmoSDKSampleAppIOS.xcodeproj">
+            BuildableName = "VenmoIOSSDKSampleApp.app"
+            BlueprintName = "VenmoIOSSDKSampleApp"
+            ReferencedContainer = "container:VenmoIOSSDKSampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C3A63DF1656DC9E004C7F73"
-            BuildableName = "VenmoSDKSampleAppIOS.app"
-            BlueprintName = "VenmoSDKSampleAppIOS"
-            ReferencedContainer = "container:VenmoSDKSampleAppIOS.xcodeproj">
+            BuildableName = "VenmoIOSSDKSampleApp.app"
+            BlueprintName = "VenmoIOSSDKSampleApp"
+            ReferencedContainer = "container:VenmoIOSSDKSampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

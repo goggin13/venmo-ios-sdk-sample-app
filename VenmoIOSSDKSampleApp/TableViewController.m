@@ -191,7 +191,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //    if (/*hasPaymentMethods && */section == 0) {
     if (hasPaymentMethods && section == 0) {
         return 1;
     } else {
@@ -297,7 +296,6 @@
     if (!checkboxWidget) {
         checkboxWidget = [vdkClient checkboxWidget];
         [checkboxWidget setOrigin:CGPointMake(0, 0)];
-        //        [checkboxWidget setWidth:320]; // TODO: why is this 320???
         [checkboxWidget setBackgroundColor:[UIColor clearColor]];
     }
     
@@ -314,7 +312,8 @@
     
     button.enabled = NO;
     
-    // Option 1 - Encrypt card data individually, then append "venmo_sdk_session"
+    // Option 1 - Encrypt card data individually, then append "venmo_sdk_session".
+    // Requires usage of the Braintree iOS encryption library
 //    BraintreeEncryption *braintreeEncryption = [[BraintreeEncryption alloc]
 //                                                initWithPublicKey:BRAINTREE_KEY];
 //
@@ -333,7 +332,6 @@
 //        i++;
 //    }
 //    [params setObject:[vdkClient venmoSDKSession] forKey:@"enc_venmo_sdk_session"];
-//    NSLog(@"params:\n%@", params);
     
     // Option 2 - Convenience method to encrypt card data that also adds "venmo_sdk_session"
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithCapacity:5];
@@ -352,7 +350,6 @@
     NSMutableDictionary *newParams = [NSMutableDictionary dictionaryWithDictionary:params];
     [newParams setObject:[params objectForKey:@"venmo_sdk_session"]
                   forKey:@"enc_venmo_sdk_session"];
-    NSLog(@"params: %@", newParams);
     
     // Send card information to the test merchant server.
     NSString *urlString = [NSString stringWithFormat:@"%@%@",
@@ -385,7 +382,7 @@
          BOOL success = [[response objectForKey:@"success"] isEqualToNumber:@1];
          
          UIAlertView *alertView =
-         [[UIAlertView alloc] initWithTitle:(success ? @"Pound it!" : @"Error Sending Card")
+         [[UIAlertView alloc] initWithTitle:(success ? @"Nice!" : @"Error Sending Card")
                                     message:nil delegate:nil cancelButtonTitle:@"OK"
                           otherButtonTitles:nil];
          
@@ -463,7 +460,7 @@
          NSString *paymentMethodToken = [response objectForKey:@"payment_method_token"];
          
          UIAlertView *alertView =
-         [[UIAlertView alloc] initWithTitle:(!paymentMethodToken ? @"Error using card" : @"Rock on!")
+         [[UIAlertView alloc] initWithTitle:(!paymentMethodToken ? @"Error using card" : @"Success!")
                                     message:nil delegate:nil cancelButtonTitle:@"OK"
                           otherButtonTitles:nil];
          

@@ -37,14 +37,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C3A63E01656DC9E004C7F73 /* VenmoSDKSampleAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenmoSDKSampleAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3A63E01656DC9E004C7F73 /* VenmoIOSSDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenmoIOSSDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3A63E41656DC9E004C7F73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9C3A63E61656DC9E004C7F73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C3A63E81656DC9E004C7F73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9C3A63EC1656DC9E004C7F73 /* VenmoSDKSampleAppIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenmoSDKSampleAppIOS-Info.plist"; sourceTree = "<group>"; };
+		9C3A63EC1656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenmoIOSSDKSampleApp-Info.plist"; sourceTree = "<group>"; };
 		9C3A63EE1656DC9E004C7F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C3A63F01656DC9E004C7F73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C3A63F21656DC9E004C7F73 /* VenmoSDKSampleAppIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoSDKSampleAppIOS-Prefix.pch"; sourceTree = "<group>"; };
+		9C3A63F21656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoIOSSDKSampleApp-Prefix.pch"; sourceTree = "<group>"; };
 		9C3A63F31656DC9E004C7F73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C3A63F41656DC9E004C7F73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C3A63F61656DC9E004C7F73 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9C3A64341656E141004C7F73 /* Security.framework */,
-				9C3A63EA1656DC9E004C7F73 /* VenmoSDKSampleAppIOS */,
+				9C3A63EA1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */,
 				9C3A640B1656E0F0004C7F73 /* Libraries */,
 				9C3A63E31656DC9E004C7F73 /* Frameworks */,
 				9C3A63E11656DC9E004C7F73 /* Products */,
@@ -108,7 +108,7 @@
 		9C3A63E11656DC9E004C7F73 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C3A63E01656DC9E004C7F73 /* VenmoSDKSampleAppIOS.app */,
+				9C3A63E01656DC9E004C7F73 /* VenmoIOSSDKSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9C3A63EA1656DC9E004C7F73 /* VenmoSDKSampleAppIOS */ = {
+		9C3A63EA1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */ = {
 			isa = PBXGroup;
 			children = (
 				9C3A63F31656DC9E004C7F73 /* AppDelegate.h */,
@@ -133,16 +133,17 @@
 				9C3A640A1656DF45004C7F73 /* MerchantAppVenmoSDKDefines.h */,
 				9C3A63EB1656DC9E004C7F73 /* Supporting Files */,
 			);
-			path = VenmoSDKSampleAppIOS;
+			name = VenmoIOSSDKSampleApp;
+			path = VenmoIOSSDKSampleApp;
 			sourceTree = "<group>";
 		};
 		9C3A63EB1656DC9E004C7F73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C3A63EC1656DC9E004C7F73 /* VenmoSDKSampleAppIOS-Info.plist */,
+				9C3A63EC1656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Info.plist */,
 				9C3A63ED1656DC9E004C7F73 /* InfoPlist.strings */,
 				9C3A63F01656DC9E004C7F73 /* main.m */,
-				9C3A63F21656DC9E004C7F73 /* VenmoSDKSampleAppIOS-Prefix.pch */,
+				9C3A63F21656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Prefix.pch */,
 				9C3A63F61656DC9E004C7F73 /* Default.png */,
 				9C3A63F81656DC9E004C7F73 /* Default@2x.png */,
 				9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */,
@@ -198,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C3A63DF1656DC9E004C7F73 /* VenmoSDKSampleAppIOS */ = {
+		9C3A63DF1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C3A64041656DC9E004C7F73 /* Build configuration list for PBXNativeTarget "VenmoSDKSampleAppIOS" */;
+			buildConfigurationList = 9C3A64041656DC9E004C7F73 /* Build configuration list for PBXNativeTarget "VenmoIOSSDKSampleApp" */;
 			buildPhases = (
 				9C3A63DC1656DC9E004C7F73 /* Sources */,
 				9C3A63DD1656DC9E004C7F73 /* Frameworks */,
@@ -210,9 +211,9 @@
 			);
 			dependencies = (
 			);
-			name = VenmoSDKSampleAppIOS;
-			productName = VenmoSDKSampleAppIOS;
-			productReference = 9C3A63E01656DC9E004C7F73 /* VenmoSDKSampleAppIOS.app */;
+			name = VenmoIOSSDKSampleApp;
+			productName = VenmoIOSSDKSampleApp;
+			productReference = 9C3A63E01656DC9E004C7F73 /* VenmoIOSSDKSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +225,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Venmo;
 			};
-			buildConfigurationList = 9C3A63DA1656DC9E004C7F73 /* Build configuration list for PBXProject "VenmoSDKSampleAppIOS" */;
+			buildConfigurationList = 9C3A63DA1656DC9E004C7F73 /* Build configuration list for PBXProject "VenmoIOSSDKSampleApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,7 +237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C3A63DF1656DC9E004C7F73 /* VenmoSDKSampleAppIOS */,
+				9C3A63DF1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -348,13 +349,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Prefix.pch";
-				INFOPLIST_FILE = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Info.plist";
+				GCC_PREFIX_HEADER = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Prefix.pch";
+				INFOPLIST_FILE = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/Venmo SDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VenmoIOSSDKSampleApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -363,13 +364,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Prefix.pch";
-				INFOPLIST_FILE = "VenmoSDKSampleAppIOS/VenmoSDKSampleAppIOS-Info.plist";
+				GCC_PREFIX_HEADER = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Prefix.pch";
+				INFOPLIST_FILE = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/Venmo SDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VenmoIOSSDKSampleApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -377,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C3A63DA1656DC9E004C7F73 /* Build configuration list for PBXProject "VenmoSDKSampleAppIOS" */ = {
+		9C3A63DA1656DC9E004C7F73 /* Build configuration list for PBXProject "VenmoIOSSDKSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C3A64021656DC9E004C7F73 /* Debug */,
@@ -386,13 +387,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C3A64041656DC9E004C7F73 /* Build configuration list for PBXNativeTarget "VenmoSDKSampleAppIOS" */ = {
+		9C3A64041656DC9E004C7F73 /* Build configuration list for PBXNativeTarget "VenmoIOSSDKSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C3A64051656DC9E004C7F73 /* Debug */,
 				9C3A64061656DC9E004C7F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

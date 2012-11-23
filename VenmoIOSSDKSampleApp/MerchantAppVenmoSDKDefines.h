@@ -1,0 +1,8 @@
+#ifndef VenmoSDKDemoApp_MerchantAppVenmoSDKDefines_h
+#define VenmoSDKDemoApp_MerchantAppVenmoSDKDefines_h
+
+#define SANDBOX_BRAINTREE_KEY @"MIIBCgKCAQEA7zuPxt75mzMTfMqHb/1p/FOtdanLmN/GuGMDPGhz/t3ZaGZuI4BLpVPFTFwe086vMTMPh2NGpF6CZ6aPV3n3m5HoEm++yGTFE9/6n863gl4aszrJNWRWB68lYxB27fqDyk9QGBS95Kb03cieQbtqYS25zbc7P2XEOHv+XfypC5YjVMdTZjq1zzQ6wg6NZ7mpGCChhznjFXqm2uh3qM7MX0CsowWRFBHjTiJoRgTuNHwKp6mC3i8UDd1zJws94Oo87vpNVnFKVP2uqRyYrF4rlEw7CCDG8/llPDpK2ADBFBWyPK49F/8U5NZPLS7DqtuBN7Oq18SpcXczrcP1ZhBJSwIDAQAB"
+#define SANDBOX_MERCHANT_ID   @"t34jgpz7ktn4rsfm"
+#define SANDBOX_MERCHANT_URL  @"http://venmo-sdk-sample-two.herokuapp.com"
+
+#endif
