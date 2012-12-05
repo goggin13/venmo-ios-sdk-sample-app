@@ -7,6 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C370A99166FE29D00B40F36 /* Arrow01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A6F166FE29D00B40F36 /* Arrow01.png */; };
+		9C370A9A166FE29D00B40F36 /* Arrow01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A70166FE29D00B40F36 /* Arrow01@2x.png */; };
+		9C370A9B166FE29D00B40F36 /* Arrow02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A71166FE29D00B40F36 /* Arrow02.png */; };
+		9C370A9C166FE29D00B40F36 /* Arrow02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A72166FE29D00B40F36 /* Arrow02@2x.png */; };
+		9C370A9D166FE29D00B40F36 /* BlueButtonBackgroundNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A73166FE29D00B40F36 /* BlueButtonBackgroundNormal.png */; };
+		9C370A9E166FE29D00B40F36 /* BlueButtonBackgroundNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A74166FE29D00B40F36 /* BlueButtonBackgroundNormal@2x.png */; };
+		9C370A9F166FE29D00B40F36 /* CardLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A75166FE29D00B40F36 /* CardLogo.png */; };
+		9C370AA0166FE29D00B40F36 /* CardLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A76166FE29D00B40F36 /* CardLogo@2x.png */; };
+		9C370AA1166FE29D00B40F36 /* CheckboxCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A77166FE29D00B40F36 /* CheckboxCheck.png */; };
+		9C370AA2166FE29D00B40F36 /* CheckboxCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A78166FE29D00B40F36 /* CheckboxCheck@2x.png */; };
+		9C370AA3166FE29D00B40F36 /* CheckboxUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A79166FE29D00B40F36 /* CheckboxUnchecked.png */; };
+		9C370AA4166FE29D00B40F36 /* CheckboxUnchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A7A166FE29D00B40F36 /* CheckboxUnchecked@2x.png */; };
+		9C370AA5166FE29D00B40F36 /* CreditCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A7B166FE29D00B40F36 /* CreditCard.png */; };
+		9C370AA6166FE29D00B40F36 /* CreditCard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A7C166FE29D00B40F36 /* CreditCard@2x.png */; };
+		9C370AA7166FE29D00B40F36 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A7D166FE29D00B40F36 /* iPhone.png */; };
+		9C370AA8166FE29D00B40F36 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A7E166FE29D00B40F36 /* iPhone@2x.png */; };
+		9C370AA9166FE29D00B40F36 /* libVenmoSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C370A7F166FE29D00B40F36 /* libVenmoSDK.a */; };
+		9C370AAA166FE29D00B40F36 /* Lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A80166FE29D00B40F36 /* Lock.png */; };
+		9C370AAB166FE29D00B40F36 /* Lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A81166FE29D00B40F36 /* Lock@2x.png */; };
+		9C370AAC166FE29D00B40F36 /* ModalClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A82166FE29D00B40F36 /* ModalClose.png */; };
+		9C370AAD166FE29D00B40F36 /* ModalClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A83166FE29D00B40F36 /* ModalClose@2x.png */; };
+		9C370AAE166FE29D00B40F36 /* UseCardArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A84166FE29D00B40F36 /* UseCardArrow.png */; };
+		9C370AAF166FE29D00B40F36 /* UseCardArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A85166FE29D00B40F36 /* UseCardArrow@2x.png */; };
+		9C370AB0166FE29D00B40F36 /* UseCardMag.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A86166FE29D00B40F36 /* UseCardMag.png */; };
+		9C370AB1166FE29D00B40F36 /* UseCardMag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A87166FE29D00B40F36 /* UseCardMag@2x.png */; };
+		9C370AB2166FE29D00B40F36 /* UseCardRoundButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A88166FE29D00B40F36 /* UseCardRoundButton.png */; };
+		9C370AB3166FE29D00B40F36 /* UseCardRoundButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A89166FE29D00B40F36 /* UseCardRoundButton@2x.png */; };
+		9C370AB4166FE29D00B40F36 /* UseCardRoundL.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A8A166FE29D00B40F36 /* UseCardRoundL.png */; };
+		9C370AB5166FE29D00B40F36 /* UseCardRoundL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A8B166FE29D00B40F36 /* UseCardRoundL@2x.png */; };
+		9C370AB6166FE29D00B40F36 /* UseCardRoundR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A8C166FE29D00B40F36 /* UseCardRoundR.png */; };
+		9C370AB7166FE29D00B40F36 /* UseCardRoundR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A8D166FE29D00B40F36 /* UseCardRoundR@2x.png */; };
+		9C370AB8166FE29D00B40F36 /* VenmoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A91166FE29D00B40F36 /* VenmoButton.png */; };
+		9C370AB9166FE29D00B40F36 /* VenmoButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A92166FE29D00B40F36 /* VenmoButton@2x.png */; };
+		9C370ABA166FE29D00B40F36 /* VenmoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A93166FE29D00B40F36 /* VenmoIcon.png */; };
+		9C370ABB166FE29D00B40F36 /* VenmoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A94166FE29D00B40F36 /* VenmoIcon@2x.png */; };
+		9C370ABC166FE29D00B40F36 /* VenmoLogoGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A95166FE29D00B40F36 /* VenmoLogoGray.png */; };
+		9C370ABD166FE29D00B40F36 /* VenmoLogoGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A96166FE29D00B40F36 /* VenmoLogoGray@2x.png */; };
+		9C370ABE166FE29D00B40F36 /* VenmoMerchantImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A97166FE29D00B40F36 /* VenmoMerchantImage.png */; };
+		9C370ABF166FE29D00B40F36 /* VenmoMerchantImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C370A98166FE29D00B40F36 /* VenmoMerchantImage@2x.png */; };
 		9C3A63E51656DC9E004C7F73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A63E41656DC9E004C7F73 /* UIKit.framework */; };
 		9C3A63E71656DC9E004C7F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A63E61656DC9E004C7F73 /* Foundation.framework */; };
 		9C3A63E91656DC9E004C7F73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A63E81656DC9E004C7F73 /* CoreGraphics.framework */; };
@@ -17,19 +56,6 @@
 		9C3A63F91656DC9E004C7F73 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63F81656DC9E004C7F73 /* Default@2x.png */; };
 		9C3A63FB1656DC9E004C7F73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */; };
 		9C3A64091656DF29004C7F73 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A64081656DF29004C7F73 /* TableViewController.m */; };
-		9C3A641E1656E115004C7F73 /* BlueButtonBackgroundNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A640E1656E115004C7F73 /* BlueButtonBackgroundNormal.png */; };
-		9C3A641F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A640F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png */; };
-		9C3A64201656E115004C7F73 /* CheckboxCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64101656E115004C7F73 /* CheckboxCheck.png */; };
-		9C3A64211656E115004C7F73 /* CheckboxCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64111656E115004C7F73 /* CheckboxCheck@2x.png */; };
-		9C3A64221656E115004C7F73 /* CheckboxUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64121656E115004C7F73 /* CheckboxUnchecked.png */; };
-		9C3A64231656E115004C7F73 /* CheckboxUnchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64131656E115004C7F73 /* CheckboxUnchecked@2x.png */; };
-		9C3A64241656E115004C7F73 /* libVenmoSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A64141656E115004C7F73 /* libVenmoSDK.a */; };
-		9C3A64251656E115004C7F73 /* ModalClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64151656E115004C7F73 /* ModalClose.png */; };
-		9C3A64261656E115004C7F73 /* ModalClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64161656E115004C7F73 /* ModalClose@2x.png */; };
-		9C3A64271656E115004C7F73 /* UseCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64171656E115004C7F73 /* UseCard.png */; };
-		9C3A64281656E115004C7F73 /* UseCard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A64181656E115004C7F73 /* UseCard@2x.png */; };
-		9C3A64291656E115004C7F73 /* VenmoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A641C1656E115004C7F73 /* VenmoLogo.png */; };
-		9C3A642A1656E115004C7F73 /* VenmoLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */; };
 		9C3A64351656E141004C7F73 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A64341656E141004C7F73 /* Security.framework */; };
 		9C6860E1165F504F000568A8 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6860DC165F504F000568A8 /* FSN_categories.m */; };
 		9C6860E2165F504F000568A8 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6860DE165F504F000568A8 /* FSNConnection.m */; };
@@ -37,6 +63,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C370A6F166FE29D00B40F36 /* Arrow01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Arrow01.png; path = "Libraries/Venmo SDK/Arrow01.png"; sourceTree = "<group>"; };
+		9C370A70166FE29D00B40F36 /* Arrow01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Arrow01@2x.png"; path = "Libraries/Venmo SDK/Arrow01@2x.png"; sourceTree = "<group>"; };
+		9C370A71166FE29D00B40F36 /* Arrow02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Arrow02.png; path = "Libraries/Venmo SDK/Arrow02.png"; sourceTree = "<group>"; };
+		9C370A72166FE29D00B40F36 /* Arrow02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Arrow02@2x.png"; path = "Libraries/Venmo SDK/Arrow02@2x.png"; sourceTree = "<group>"; };
+		9C370A73166FE29D00B40F36 /* BlueButtonBackgroundNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueButtonBackgroundNormal.png; path = "Libraries/Venmo SDK/BlueButtonBackgroundNormal.png"; sourceTree = "<group>"; };
+		9C370A74166FE29D00B40F36 /* BlueButtonBackgroundNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BlueButtonBackgroundNormal@2x.png"; path = "Libraries/Venmo SDK/BlueButtonBackgroundNormal@2x.png"; sourceTree = "<group>"; };
+		9C370A75166FE29D00B40F36 /* CardLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CardLogo.png; path = "Libraries/Venmo SDK/CardLogo.png"; sourceTree = "<group>"; };
+		9C370A76166FE29D00B40F36 /* CardLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CardLogo@2x.png"; path = "Libraries/Venmo SDK/CardLogo@2x.png"; sourceTree = "<group>"; };
+		9C370A77166FE29D00B40F36 /* CheckboxCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheckboxCheck.png; path = "Libraries/Venmo SDK/CheckboxCheck.png"; sourceTree = "<group>"; };
+		9C370A78166FE29D00B40F36 /* CheckboxCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CheckboxCheck@2x.png"; path = "Libraries/Venmo SDK/CheckboxCheck@2x.png"; sourceTree = "<group>"; };
+		9C370A79166FE29D00B40F36 /* CheckboxUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheckboxUnchecked.png; path = "Libraries/Venmo SDK/CheckboxUnchecked.png"; sourceTree = "<group>"; };
+		9C370A7A166FE29D00B40F36 /* CheckboxUnchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CheckboxUnchecked@2x.png"; path = "Libraries/Venmo SDK/CheckboxUnchecked@2x.png"; sourceTree = "<group>"; };
+		9C370A7B166FE29D00B40F36 /* CreditCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CreditCard.png; path = "Libraries/Venmo SDK/CreditCard.png"; sourceTree = "<group>"; };
+		9C370A7C166FE29D00B40F36 /* CreditCard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CreditCard@2x.png"; path = "Libraries/Venmo SDK/CreditCard@2x.png"; sourceTree = "<group>"; };
+		9C370A7D166FE29D00B40F36 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone.png; path = "Libraries/Venmo SDK/iPhone.png"; sourceTree = "<group>"; };
+		9C370A7E166FE29D00B40F36 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone@2x.png"; path = "Libraries/Venmo SDK/iPhone@2x.png"; sourceTree = "<group>"; };
+		9C370A7F166FE29D00B40F36 /* libVenmoSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVenmoSDK.a; path = "Libraries/Venmo SDK/libVenmoSDK.a"; sourceTree = "<group>"; };
+		9C370A80166FE29D00B40F36 /* Lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lock.png; path = "Libraries/Venmo SDK/Lock.png"; sourceTree = "<group>"; };
+		9C370A81166FE29D00B40F36 /* Lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Lock@2x.png"; path = "Libraries/Venmo SDK/Lock@2x.png"; sourceTree = "<group>"; };
+		9C370A82166FE29D00B40F36 /* ModalClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ModalClose.png; path = "Libraries/Venmo SDK/ModalClose.png"; sourceTree = "<group>"; };
+		9C370A83166FE29D00B40F36 /* ModalClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ModalClose@2x.png"; path = "Libraries/Venmo SDK/ModalClose@2x.png"; sourceTree = "<group>"; };
+		9C370A84166FE29D00B40F36 /* UseCardArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UseCardArrow.png; path = "Libraries/Venmo SDK/UseCardArrow.png"; sourceTree = "<group>"; };
+		9C370A85166FE29D00B40F36 /* UseCardArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UseCardArrow@2x.png"; path = "Libraries/Venmo SDK/UseCardArrow@2x.png"; sourceTree = "<group>"; };
+		9C370A86166FE29D00B40F36 /* UseCardMag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UseCardMag.png; path = "Libraries/Venmo SDK/UseCardMag.png"; sourceTree = "<group>"; };
+		9C370A87166FE29D00B40F36 /* UseCardMag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UseCardMag@2x.png"; path = "Libraries/Venmo SDK/UseCardMag@2x.png"; sourceTree = "<group>"; };
+		9C370A88166FE29D00B40F36 /* UseCardRoundButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UseCardRoundButton.png; path = "Libraries/Venmo SDK/UseCardRoundButton.png"; sourceTree = "<group>"; };
+		9C370A89166FE29D00B40F36 /* UseCardRoundButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UseCardRoundButton@2x.png"; path = "Libraries/Venmo SDK/UseCardRoundButton@2x.png"; sourceTree = "<group>"; };
+		9C370A8A166FE29D00B40F36 /* UseCardRoundL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UseCardRoundL.png; path = "Libraries/Venmo SDK/UseCardRoundL.png"; sourceTree = "<group>"; };
+		9C370A8B166FE29D00B40F36 /* UseCardRoundL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UseCardRoundL@2x.png"; path = "Libraries/Venmo SDK/UseCardRoundL@2x.png"; sourceTree = "<group>"; };
+		9C370A8C166FE29D00B40F36 /* UseCardRoundR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UseCardRoundR.png; path = "Libraries/Venmo SDK/UseCardRoundR.png"; sourceTree = "<group>"; };
+		9C370A8D166FE29D00B40F36 /* UseCardRoundR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UseCardRoundR@2x.png"; path = "Libraries/Venmo SDK/UseCardRoundR@2x.png"; sourceTree = "<group>"; };
+		9C370A8E166FE29D00B40F36 /* VDKCardWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKCardWidget.h; path = "Libraries/Venmo SDK/VDKCardWidget.h"; sourceTree = "<group>"; };
+		9C370A8F166FE29D00B40F36 /* VDKCheckboxWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKCheckboxWidget.h; path = "Libraries/Venmo SDK/VDKCheckboxWidget.h"; sourceTree = "<group>"; };
+		9C370A90166FE29D00B40F36 /* VDKClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKClient.h; path = "Libraries/Venmo SDK/VDKClient.h"; sourceTree = "<group>"; };
+		9C370A91166FE29D00B40F36 /* VenmoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoButton.png; path = "Libraries/Venmo SDK/VenmoButton.png"; sourceTree = "<group>"; };
+		9C370A92166FE29D00B40F36 /* VenmoButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VenmoButton@2x.png"; path = "Libraries/Venmo SDK/VenmoButton@2x.png"; sourceTree = "<group>"; };
+		9C370A93166FE29D00B40F36 /* VenmoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoIcon.png; path = "Libraries/Venmo SDK/VenmoIcon.png"; sourceTree = "<group>"; };
+		9C370A94166FE29D00B40F36 /* VenmoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VenmoIcon@2x.png"; path = "Libraries/Venmo SDK/VenmoIcon@2x.png"; sourceTree = "<group>"; };
+		9C370A95166FE29D00B40F36 /* VenmoLogoGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogoGray.png; path = "Libraries/Venmo SDK/VenmoLogoGray.png"; sourceTree = "<group>"; };
+		9C370A96166FE29D00B40F36 /* VenmoLogoGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VenmoLogoGray@2x.png"; path = "Libraries/Venmo SDK/VenmoLogoGray@2x.png"; sourceTree = "<group>"; };
+		9C370A97166FE29D00B40F36 /* VenmoMerchantImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoMerchantImage.png; path = "Libraries/Venmo SDK/VenmoMerchantImage.png"; sourceTree = "<group>"; };
+		9C370A98166FE29D00B40F36 /* VenmoMerchantImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VenmoMerchantImage@2x.png"; path = "Libraries/Venmo SDK/VenmoMerchantImage@2x.png"; sourceTree = "<group>"; };
 		9C3A63E01656DC9E004C7F73 /* VenmoIOSSDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenmoIOSSDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3A63E41656DC9E004C7F73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9C3A63E61656DC9E004C7F73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,22 +121,6 @@
 		9C3A64071656DF29004C7F73 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		9C3A64081656DF29004C7F73 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		9C3A640A1656DF45004C7F73 /* MerchantAppVenmoSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantAppVenmoSDKDefines.h; sourceTree = "<group>"; };
-		9C3A640E1656E115004C7F73 /* BlueButtonBackgroundNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueButtonBackgroundNormal.png; path = "Libraries/Venmo SDK/BlueButtonBackgroundNormal.png"; sourceTree = "<group>"; };
-		9C3A640F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BlueButtonBackgroundNormal@2x.png"; path = "Libraries/Venmo SDK/BlueButtonBackgroundNormal@2x.png"; sourceTree = "<group>"; };
-		9C3A64101656E115004C7F73 /* CheckboxCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheckboxCheck.png; path = "Libraries/Venmo SDK/CheckboxCheck.png"; sourceTree = "<group>"; };
-		9C3A64111656E115004C7F73 /* CheckboxCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CheckboxCheck@2x.png"; path = "Libraries/Venmo SDK/CheckboxCheck@2x.png"; sourceTree = "<group>"; };
-		9C3A64121656E115004C7F73 /* CheckboxUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheckboxUnchecked.png; path = "Libraries/Venmo SDK/CheckboxUnchecked.png"; sourceTree = "<group>"; };
-		9C3A64131656E115004C7F73 /* CheckboxUnchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CheckboxUnchecked@2x.png"; path = "Libraries/Venmo SDK/CheckboxUnchecked@2x.png"; sourceTree = "<group>"; };
-		9C3A64141656E115004C7F73 /* libVenmoSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVenmoSDK.a; path = "Libraries/Venmo SDK/libVenmoSDK.a"; sourceTree = "<group>"; };
-		9C3A64151656E115004C7F73 /* ModalClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ModalClose.png; path = "Libraries/Venmo SDK/ModalClose.png"; sourceTree = "<group>"; };
-		9C3A64161656E115004C7F73 /* ModalClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ModalClose@2x.png"; path = "Libraries/Venmo SDK/ModalClose@2x.png"; sourceTree = "<group>"; };
-		9C3A64171656E115004C7F73 /* UseCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UseCard.png; path = "Libraries/Venmo SDK/UseCard.png"; sourceTree = "<group>"; };
-		9C3A64181656E115004C7F73 /* UseCard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UseCard@2x.png"; path = "Libraries/Venmo SDK/UseCard@2x.png"; sourceTree = "<group>"; };
-		9C3A64191656E115004C7F73 /* VDKCardWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKCardWidget.h; path = "Libraries/Venmo SDK/VDKCardWidget.h"; sourceTree = "<group>"; };
-		9C3A641A1656E115004C7F73 /* VDKCheckboxWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKCheckboxWidget.h; path = "Libraries/Venmo SDK/VDKCheckboxWidget.h"; sourceTree = "<group>"; };
-		9C3A641B1656E115004C7F73 /* VDKClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKClient.h; path = "Libraries/Venmo SDK/VDKClient.h"; sourceTree = "<group>"; };
-		9C3A641C1656E115004C7F73 /* VenmoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogo.png; path = "Libraries/Venmo SDK/VenmoLogo.png"; sourceTree = "<group>"; };
-		9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VenmoLogo@2x.png"; path = "Libraries/Venmo SDK/VenmoLogo@2x.png"; sourceTree = "<group>"; };
 		9C3A64341656E141004C7F73 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9C6860DB165F504F000568A8 /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = Libraries/FSNetworking/FSN_categories.h; sourceTree = "<group>"; };
 		9C6860DC165F504F000568A8 /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = Libraries/FSNetworking/FSN_categories.m; sourceTree = "<group>"; };
@@ -87,7 +139,7 @@
 				9C3A63E51656DC9E004C7F73 /* UIKit.framework in Frameworks */,
 				9C3A63E71656DC9E004C7F73 /* Foundation.framework in Frameworks */,
 				9C3A63E91656DC9E004C7F73 /* CoreGraphics.framework in Frameworks */,
-				9C3A64241656E115004C7F73 /* libVenmoSDK.a in Frameworks */,
+				9C370AA9166FE29D00B40F36 /* libVenmoSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,22 +214,48 @@
 		9C3A640C1656E0F8004C7F73 /* Venmo SDK */ = {
 			isa = PBXGroup;
 			children = (
-				9C3A640E1656E115004C7F73 /* BlueButtonBackgroundNormal.png */,
-				9C3A640F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png */,
-				9C3A64101656E115004C7F73 /* CheckboxCheck.png */,
-				9C3A64111656E115004C7F73 /* CheckboxCheck@2x.png */,
-				9C3A64121656E115004C7F73 /* CheckboxUnchecked.png */,
-				9C3A64131656E115004C7F73 /* CheckboxUnchecked@2x.png */,
-				9C3A64141656E115004C7F73 /* libVenmoSDK.a */,
-				9C3A64151656E115004C7F73 /* ModalClose.png */,
-				9C3A64161656E115004C7F73 /* ModalClose@2x.png */,
-				9C3A64171656E115004C7F73 /* UseCard.png */,
-				9C3A64181656E115004C7F73 /* UseCard@2x.png */,
-				9C3A64191656E115004C7F73 /* VDKCardWidget.h */,
-				9C3A641A1656E115004C7F73 /* VDKCheckboxWidget.h */,
-				9C3A641B1656E115004C7F73 /* VDKClient.h */,
-				9C3A641C1656E115004C7F73 /* VenmoLogo.png */,
-				9C3A641D1656E115004C7F73 /* VenmoLogo@2x.png */,
+				9C370A6F166FE29D00B40F36 /* Arrow01.png */,
+				9C370A70166FE29D00B40F36 /* Arrow01@2x.png */,
+				9C370A71166FE29D00B40F36 /* Arrow02.png */,
+				9C370A72166FE29D00B40F36 /* Arrow02@2x.png */,
+				9C370A73166FE29D00B40F36 /* BlueButtonBackgroundNormal.png */,
+				9C370A74166FE29D00B40F36 /* BlueButtonBackgroundNormal@2x.png */,
+				9C370A75166FE29D00B40F36 /* CardLogo.png */,
+				9C370A76166FE29D00B40F36 /* CardLogo@2x.png */,
+				9C370A77166FE29D00B40F36 /* CheckboxCheck.png */,
+				9C370A78166FE29D00B40F36 /* CheckboxCheck@2x.png */,
+				9C370A79166FE29D00B40F36 /* CheckboxUnchecked.png */,
+				9C370A7A166FE29D00B40F36 /* CheckboxUnchecked@2x.png */,
+				9C370A7B166FE29D00B40F36 /* CreditCard.png */,
+				9C370A7C166FE29D00B40F36 /* CreditCard@2x.png */,
+				9C370A7D166FE29D00B40F36 /* iPhone.png */,
+				9C370A7E166FE29D00B40F36 /* iPhone@2x.png */,
+				9C370A7F166FE29D00B40F36 /* libVenmoSDK.a */,
+				9C370A80166FE29D00B40F36 /* Lock.png */,
+				9C370A81166FE29D00B40F36 /* Lock@2x.png */,
+				9C370A82166FE29D00B40F36 /* ModalClose.png */,
+				9C370A83166FE29D00B40F36 /* ModalClose@2x.png */,
+				9C370A84166FE29D00B40F36 /* UseCardArrow.png */,
+				9C370A85166FE29D00B40F36 /* UseCardArrow@2x.png */,
+				9C370A86166FE29D00B40F36 /* UseCardMag.png */,
+				9C370A87166FE29D00B40F36 /* UseCardMag@2x.png */,
+				9C370A88166FE29D00B40F36 /* UseCardRoundButton.png */,
+				9C370A89166FE29D00B40F36 /* UseCardRoundButton@2x.png */,
+				9C370A8A166FE29D00B40F36 /* UseCardRoundL.png */,
+				9C370A8B166FE29D00B40F36 /* UseCardRoundL@2x.png */,
+				9C370A8C166FE29D00B40F36 /* UseCardRoundR.png */,
+				9C370A8D166FE29D00B40F36 /* UseCardRoundR@2x.png */,
+				9C370A8E166FE29D00B40F36 /* VDKCardWidget.h */,
+				9C370A8F166FE29D00B40F36 /* VDKCheckboxWidget.h */,
+				9C370A90166FE29D00B40F36 /* VDKClient.h */,
+				9C370A91166FE29D00B40F36 /* VenmoButton.png */,
+				9C370A92166FE29D00B40F36 /* VenmoButton@2x.png */,
+				9C370A93166FE29D00B40F36 /* VenmoIcon.png */,
+				9C370A94166FE29D00B40F36 /* VenmoIcon@2x.png */,
+				9C370A95166FE29D00B40F36 /* VenmoLogoGray.png */,
+				9C370A96166FE29D00B40F36 /* VenmoLogoGray@2x.png */,
+				9C370A97166FE29D00B40F36 /* VenmoMerchantImage.png */,
+				9C370A98166FE29D00B40F36 /* VenmoMerchantImage@2x.png */,
 			);
 			name = "Venmo SDK";
 			sourceTree = "<group>";
@@ -250,18 +328,44 @@
 				9C3A63F71656DC9E004C7F73 /* Default.png in Resources */,
 				9C3A63F91656DC9E004C7F73 /* Default@2x.png in Resources */,
 				9C3A63FB1656DC9E004C7F73 /* Default-568h@2x.png in Resources */,
-				9C3A641E1656E115004C7F73 /* BlueButtonBackgroundNormal.png in Resources */,
-				9C3A641F1656E115004C7F73 /* BlueButtonBackgroundNormal@2x.png in Resources */,
-				9C3A64201656E115004C7F73 /* CheckboxCheck.png in Resources */,
-				9C3A64211656E115004C7F73 /* CheckboxCheck@2x.png in Resources */,
-				9C3A64221656E115004C7F73 /* CheckboxUnchecked.png in Resources */,
-				9C3A64231656E115004C7F73 /* CheckboxUnchecked@2x.png in Resources */,
-				9C3A64251656E115004C7F73 /* ModalClose.png in Resources */,
-				9C3A64261656E115004C7F73 /* ModalClose@2x.png in Resources */,
-				9C3A64271656E115004C7F73 /* UseCard.png in Resources */,
-				9C3A64281656E115004C7F73 /* UseCard@2x.png in Resources */,
-				9C3A64291656E115004C7F73 /* VenmoLogo.png in Resources */,
-				9C3A642A1656E115004C7F73 /* VenmoLogo@2x.png in Resources */,
+				9C370A99166FE29D00B40F36 /* Arrow01.png in Resources */,
+				9C370A9A166FE29D00B40F36 /* Arrow01@2x.png in Resources */,
+				9C370A9B166FE29D00B40F36 /* Arrow02.png in Resources */,
+				9C370A9C166FE29D00B40F36 /* Arrow02@2x.png in Resources */,
+				9C370A9D166FE29D00B40F36 /* BlueButtonBackgroundNormal.png in Resources */,
+				9C370A9E166FE29D00B40F36 /* BlueButtonBackgroundNormal@2x.png in Resources */,
+				9C370A9F166FE29D00B40F36 /* CardLogo.png in Resources */,
+				9C370AA0166FE29D00B40F36 /* CardLogo@2x.png in Resources */,
+				9C370AA1166FE29D00B40F36 /* CheckboxCheck.png in Resources */,
+				9C370AA2166FE29D00B40F36 /* CheckboxCheck@2x.png in Resources */,
+				9C370AA3166FE29D00B40F36 /* CheckboxUnchecked.png in Resources */,
+				9C370AA4166FE29D00B40F36 /* CheckboxUnchecked@2x.png in Resources */,
+				9C370AA5166FE29D00B40F36 /* CreditCard.png in Resources */,
+				9C370AA6166FE29D00B40F36 /* CreditCard@2x.png in Resources */,
+				9C370AA7166FE29D00B40F36 /* iPhone.png in Resources */,
+				9C370AA8166FE29D00B40F36 /* iPhone@2x.png in Resources */,
+				9C370AAA166FE29D00B40F36 /* Lock.png in Resources */,
+				9C370AAB166FE29D00B40F36 /* Lock@2x.png in Resources */,
+				9C370AAC166FE29D00B40F36 /* ModalClose.png in Resources */,
+				9C370AAD166FE29D00B40F36 /* ModalClose@2x.png in Resources */,
+				9C370AAE166FE29D00B40F36 /* UseCardArrow.png in Resources */,
+				9C370AAF166FE29D00B40F36 /* UseCardArrow@2x.png in Resources */,
+				9C370AB0166FE29D00B40F36 /* UseCardMag.png in Resources */,
+				9C370AB1166FE29D00B40F36 /* UseCardMag@2x.png in Resources */,
+				9C370AB2166FE29D00B40F36 /* UseCardRoundButton.png in Resources */,
+				9C370AB3166FE29D00B40F36 /* UseCardRoundButton@2x.png in Resources */,
+				9C370AB4166FE29D00B40F36 /* UseCardRoundL.png in Resources */,
+				9C370AB5166FE29D00B40F36 /* UseCardRoundL@2x.png in Resources */,
+				9C370AB6166FE29D00B40F36 /* UseCardRoundR.png in Resources */,
+				9C370AB7166FE29D00B40F36 /* UseCardRoundR@2x.png in Resources */,
+				9C370AB8166FE29D00B40F36 /* VenmoButton.png in Resources */,
+				9C370AB9166FE29D00B40F36 /* VenmoButton@2x.png in Resources */,
+				9C370ABA166FE29D00B40F36 /* VenmoIcon.png in Resources */,
+				9C370ABB166FE29D00B40F36 /* VenmoIcon@2x.png in Resources */,
+				9C370ABC166FE29D00B40F36 /* VenmoLogoGray.png in Resources */,
+				9C370ABD166FE29D00B40F36 /* VenmoLogoGray@2x.png in Resources */,
+				9C370ABE166FE29D00B40F36 /* VenmoMerchantImage.png in Resources */,
+				9C370ABF166FE29D00B40F36 /* VenmoMerchantImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

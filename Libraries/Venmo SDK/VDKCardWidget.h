@@ -14,10 +14,11 @@
  *
  * Custom public methods on VDKChardWidget widget are just for styling.
  *
- * You must use [vdkClient cardWidget] to alloc and init a VDKCardWidget. Do not create 
- * a VDKCardWidget with [[VDKCardWidget alloc] init]
+ * You must use [vdkClient cardWidget] to alloc and init a VDKCardWidget.
+ * Do NOT create a VDKCardWidget with [[VDKCardWidget alloc] init]
  *
- * The default size of a VDKCardWidget is 300 width x 80 height.
+ * The default size of a VDKCardWidget is 300 width x 80 height. The height can not be changed,
+ * but the width can be set to any value at least 280.
  */
 
 #import <Foundation/Foundation.h>
@@ -25,20 +26,20 @@
 
 @interface VDKCardWidget : UIView
 
-// Sets width to the specified value.
+// Shows/hides the picture associated with the Venmo user or previous merchant where the card was used.
+@property (nonatomic, getter=isPictureHidden) BOOL pictureHidden; // default is NO.
+
+// Sets the color of labels and button titles.
+// The color of the "How it works" link can't be changed right now right now.
+@property (strong, nonatomic) UIColor *textColor; // default is nil (text draws black)
+
+// Set the widget's background color using the default setBackgroundColor method on UIView.
+
+// Convenience method to set the width of the card widget.
 // Width must be >= 280
 - (void)setWidth:(CGFloat)newWidth;
 
 // Convenience method to set the origin of the card widget.
 - (void)setOrigin:(CGPoint)origin;
-
-// Shows/hides the picture associated with the Venmo user or previous merchant where the card was used.
-- (void)setShowsPicture:(BOOL)showsThePicture;
-
-// Sets the color of labels and button titles.
-- (void)setTextColor:(UIColor *)color;
-
-// Default UIView method overridden to propogate self's backgroundColor to subviews.
-- (void)setBackgroundColor:(UIColor *)backgroundColor;
 
 @end

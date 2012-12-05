@@ -14,10 +14,11 @@
  *
  * Custom public methods on VDKCheckboxWidget are just for styling.
  *
- * You must use [vdkClient checkboxWidget] to alloc and init a VDKCheckboxWidget. Do not create
- * a VDKCheckboxWidget with [[VDKCheckboxWidget alloc] init]
+ * You must use [vdkClient checkboxWidget] to alloc and init a VDKCheckboxWidget.
+ * Do NOT create a VDKCheckboxWidget with [[VDKCheckboxWidget alloc] init]
  *
- * The default size of a VDKCheckBoxWidget is 300 width x 44 height.
+ * The default size of a VDKCheckBoxWidget is 300 width x 44 height. The height can not be changed,
+ * but the width can be set to any value at least 280.
  */
 
 
@@ -25,16 +26,18 @@
 
 @interface VDKCheckboxWidget : UIView
 
-// Sets the text color description text.
-- (void)setTextColor:(UIColor *)newColor;
+// Sets the color of labels and button titles.
+// The color of the "How it works" & "Terms of Service" links can't be
+// changed right now right now.
+@property (strong, nonatomic) UIColor *textColor; // default is nil (text draws black)
 
-// Default UIView method overridden that sets the background view of this view and its subviews.
-- (void)setBackgroundColor:(UIColor *)backgroundColor;
+// Set the widget's background color using the default setBackgroundColor method on UIView.
 
-// Convenience method to set the origin of the VDKCheckboxWidget.
-- (void)setOrigin:(CGPoint)newOrigin;
-
-// Convenience method to set the width of the VDKCheckboxWidget.
+// Convenience method to set the width of the checkbox widget.
+// Width must be >= 280
 - (void)setWidth:(CGFloat)newWidth;
+
+// Convenience method to set the origin of the checkbox widget.
+- (void)setOrigin:(CGPoint)newOrigin;
 
 @end
