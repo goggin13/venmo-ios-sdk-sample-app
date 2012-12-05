@@ -2,7 +2,7 @@
 #define VenmoSDKDemoApp_MerchantAppVenmoSDKDefines_h
 
 #define APP_COLOR [UIColor colorWithRed:30/255.0f green:30/255.0f blue:30/255.0f alpha:1]
-#define APP_NAME @"Test"
+#define APP_NAME @"VDK"
 #define APP_TEXT_COLOR [UIColor lightGrayColor]
 #define APP_TEXT_SHADOW_COLOR [UIColor darkGrayColor]
 
