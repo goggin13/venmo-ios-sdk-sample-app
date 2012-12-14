@@ -17,7 +17,7 @@
  * You must use [vdkClient checkboxWidget] to alloc and init a VDKCheckboxWidget.
  * Do NOT create a VDKCheckboxWidget with [[VDKCheckboxWidget alloc] init]
  *
- * The default size of a VDKCheckBoxWidget is 300 width x 44 height. The height can not be changed,
+ * The default size of a VDKCheckBoxWidget is 300 width x 66 height. The height can not be changed,
  * but the width can be set to any value at least 280.
  */
 

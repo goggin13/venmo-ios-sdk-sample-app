@@ -169,6 +169,8 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (hasPaymentMethods && indexPath.section == 0) {
         return 81;
+    } else if (indexPath.row == 5) {
+        return 66;
     } else {
         return 44;
     }

@@ -1,5 +1,5 @@
 /*
- * Venmo SDK - Version 0.0.1a2
+ * Venmo SDK - Version 1.0.0
  *
  ******************************
  ******************************
@@ -27,7 +27,9 @@
  * flow to add a new payment method. We recommend adding the VDKCardWidget directly above the
  * manual credit card entry form for optimal conversion.
  *
- *
+ * The Venmo SDK does not support iOS versions below 5.0. For iOS devices running iOS below 5.0,
+ * initializing a VDKClient object will return nil. Similarly, initializing widgets on devices
+ * below iOS 5.0 will return nil.
  *
  ******************************
  * Adding a card to Braintree
@@ -77,7 +79,7 @@ typedef enum {
 } VDKEnvironment;
 
 // Before the Venmo SDK goes public, you should check the VDKIsLive status. If this returns
-// VDKIsLiveNo, do not show any widgets at all whatsoever. If VDKIsLive is equal to
+// VDKIsLiveNo, you should not show any widgets. If VDKIsLive is equal to
 // VDKIsLiveLoading, the request to download that status is nil.
 typedef enum {
     VDKIsLiveLoading,
