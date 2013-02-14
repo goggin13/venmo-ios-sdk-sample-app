@@ -1,11 +1,11 @@
 VenmoIOSSDKSampleApp
 =================
 
-You may modify the constants defined in `MerchantAppVenmoSDKDefines.h` to your own credentials.
+You may modify the constants defined in `MerchantAppVenmoSDKDefines.h` to your own credentials for testing.
 
 ## Venmo SDK Documentation ##
 
-Visit [here](https://www.braintreepayments.com/docs/ruby/venmosdk/ios) for the full documentation and usage of the Venmo SDK.
+Visit [here](https://touch.venmo.com/) for the full documentation and usage of the Venmo SDK.
 
 ## Intro ##
 
