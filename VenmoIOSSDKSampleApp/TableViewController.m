@@ -1,14 +1,23 @@
 #import "TableViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "MerchantAppVenmoSDKDefines.h"
+#import "ActivityOverlayView.h"
 #import "FSNConnection.h"
+
+#define HEADER_FRAME        CGRectMake(0,   0, 320, 50)
+#define HEADER_FRAME_HIDDEN CGRectMake(0, -50, 320, 50) // shake to hide the settings buttons
 
 static NSString *WidgetCellIdentifier = @"WidgetCell";
 static NSString *FormCellIdentifier = @"FormCell";
 static NSString *CheckboxCellIdentifier = @"CheckboxCell";
 static NSString *SubmitCellIdentifier = @"SubmitCell";
 
-@interface TableViewController()
+@interface TableViewController() {
+    UIButton *restartButton;
+    BOOL showsHeaderView;
+    UIView *headerView;
+    ActivityOverlayView *activityOverlayView;
+}
 
 @property (strong, nonatomic) VDKCardWidget *cardWidget;
 @property (strong, nonatomic) VDKCheckboxWidget *checkboxWidget;
@@ -44,11 +53,6 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     return UIInterfaceOrientationMaskPortrait;
 }
 
-- (void)viewDidUnload {
-
-    [super viewDidUnload];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.backgroundView = nil;
@@ -67,9 +71,48 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     }
 
     [self initVDKClient];
+
+    showsHeaderView = YES;
+    activityOverlayView = [ActivityOverlayView sharedOverlayView];
+    [activityOverlayView.titleLabel setText:@"Purchasing..."];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self becomeFirstResponder];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self resignFirstResponder];
+}
+
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if(event.type == UIEventSubtypeMotionShake) {
+        showsHeaderView = !showsHeaderView;
+        UIView *newHeaderView = (showsHeaderView ? headerView : nil);
+        CGRect newHeaderFrame = (showsHeaderView ? HEADER_FRAME : HEADER_FRAME_HIDDEN);
+
+        if (showsHeaderView) {
+            for (UITextField *textField in textFields) {
+                textField.text = @"";
+            }
+        }
+
+        [UIView animateWithDuration:.3 animations:^{
+            self.tableView.tableHeaderView.frame = newHeaderFrame;
+            self.tableView.tableHeaderView = newHeaderView;
+        }];
+    }
 }
 
 - (void)initVDKClient {
+    vdkClient.delegate = nil;
+    vdkClient = nil;
+
     vdkClient = [[VDKClient alloc] initWithMerchantID:SANDBOX_APP_ID
                          braintreePublicEncryptionKey:SANDBOX_BRAINTREE_KEY
                                        vdkEnvironment:VDKEnvironmentSandbox];
@@ -81,11 +124,13 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     [checkboxWidget removeFromSuperview];
     checkboxWidget = nil;
 
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    if (vdkClient) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    }
 }
 
 - (void)createHeaderView {
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    headerView = [[UIView alloc] initWithFrame:HEADER_FRAME];
     headerView.backgroundColor = APP_COLOR;
 
     UILabel *merchantName = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 100, 30)];
@@ -104,12 +149,12 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
             forControlEvents:UIControlEventTouchUpInside];
     [headerView addSubview:refreshButton];
 
-    UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    logoutButton.frame = CGRectMake(170, 5, 70, 40);
-    [logoutButton setTitle:@"Logout" forState:UIControlStateNormal];
-    [logoutButton addTarget:self action:@selector(logoutAndRestartVDKClient)
+    restartButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    restartButton.frame = CGRectMake(170, 5, 70, 40);
+    [restartButton setTitle:@"Restart" forState:UIControlStateNormal];
+    [restartButton addTarget:self action:@selector(logoutAndRestartVDKClient)
            forControlEvents:UIControlEventTouchUpInside];
-    [headerView addSubview:logoutButton];
+    [headerView addSubview:restartButton];
 
     UIButton *prefillButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     prefillButton.frame = CGRectMake(250, 5, 60, 40);
@@ -127,7 +172,10 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     cardWidget = nil;
     hasPaymentMethods = NO;
     [self.tableView reloadData];
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    if (vdkClient) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    }
+    [self becomeFirstResponder];
 }
 
 - (void)logoutAndRestartVDKClient {
@@ -135,7 +183,10 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     cardWidget = nil;
     hasPaymentMethods = NO;
     [self.tableView reloadData];
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    if (vdkClient) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    }
+    [self becomeFirstResponder];
 }
 
 - (void)paymentMethodFound {
@@ -233,6 +284,7 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     }
     else if ([cellIdentifier isEqualToString:SubmitCellIdentifier] &&
              ![cell.contentView viewWithTag:1338]) {
+        // Add the submit card button, if need be
         UIButton *submitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         submitButton.frame = CGRectMake(5, 5, 290, 35);
         submitButton.tag = 1338;
@@ -262,7 +314,7 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
 
 - (void)setUpCardWidgetForCell:(UITableViewCell *)cell {
     if (!cardWidget) {
-        cardWidget = [vdkClient cardWidget];
+        cardWidget = [[VDKClient sharedClient] cardWidget];
     }
 
     if (cardWidget && cell) {
@@ -284,10 +336,11 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     }
 
     if (!checkboxWidget) {
-        checkboxWidget = [[VDKClient sharedClient] checkboxWidget]; // sharedClient is singleton
+        checkboxWidget = [[VDKClient sharedClient] checkboxWidget];
         [checkboxWidget setOrigin:CGPointMake(0, 0)];
         [checkboxWidget setWidth:300];
         [checkboxWidget setBackgroundColor:[UIColor clearColor]];
+        [checkboxWidget setTextColor:[UIColor grayColor]];
     }
 
     [cell.contentView addSubview:checkboxWidget];
@@ -308,6 +361,11 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
 }
 
 - (void)submitNewCard:(UIButton *)button {
+
+    if (!vdkClient) { //if no client (e.g. iOS 4.3) don't submit card
+        return;
+    }
+
     for (UITextField *textField in textFields) {
         if (!textField.text || [textField.text isEqualToString:@""]) {
             return;
@@ -317,7 +375,7 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     button.enabled = NO;
 
     // Option 1 - Encrypt card data individually, then append "venmo_sdk_session"
-    // This requires the BraintreeEncryption library
+// This requires the BraintreeEncryption library
 //    BraintreeEncryption *braintreeEncryption = [[BraintreeEncryption alloc]
 //                                                initWithPublicKey:BRAINTREE_KEY];
 //
@@ -354,12 +412,13 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     NSDictionary *params = [vdkClient encryptedCardDataAndVenmoSDKSessionWithCardDictionary:parameters];
     NSMutableDictionary *newParams = [NSMutableDictionary dictionaryWithDictionary:params];
     [newParams setObject:[params objectForKey:@"venmo_sdk_session"]
-                  forKey:@"enc_venmo_sdk_session"]; // our test server accepts this param name instead of "venmo_sdk_session"
-    NSLog(@"params: %@", newParams);
+                  forKey:@"enc_venmo_sdk_session"];
+    //    NSLog(@"params: %@", newParams);
+
+    [activityOverlayView show];
 
     // Send card information to the test merchant server.
-    NSString *urlString = [NSString stringWithFormat:@"%@%@",
-                           SANDBOX_MERCHANT_URL, @"/card/add"];
+    NSString *urlString = [NSString stringWithFormat:@"%@%@", SANDBOX_MERCHANT_URL, @"/card/add"];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     FSNConnection *connection =
     [FSNConnection
@@ -381,11 +440,13 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
          NSDictionary *response = (NSDictionary *)[c parseResult];
          NSInteger statusCode = [c.response statusCode];
          NSString *serverError = [response objectForKey:@"error"];
-         NSLog(@"url: %@", c.url);
-         NSLog(@"status code: %i", [c.response statusCode]);
-         NSLog(@"response: %@", response);
-         NSLog(@"error: %@", serverError);
+ //         NSLog(@"url: %@", c.url);
+ //         NSLog(@"status code: %i", [c.response statusCode]);
+ //         NSLog(@"response: %@", response);
+ //         NSLog(@"error: %@", serverError);
          BOOL success = [[response objectForKey:@"success"] isEqualToNumber:@1];
+
+         [activityOverlayView dismissAnimated:YES];
 
          UIAlertView *alertView =
          [[UIAlertView alloc] initWithTitle:(success ? @"Nice!" : @"Error Sending Card")
@@ -434,16 +495,33 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     NSLog(@"loading finished: %i", paymentMethodOptionStatus);
     if (paymentMethodOptionStatus == VDKPaymentMethodOptionStatusYes) {
+        // Force tableview to reloadData, which renders card widget
         NSLog(@"payment method on file");
         [self paymentMethodFound];
     }
 }
 
+- (void)client:(VDKClient *)client didFinishLoadingLiveStatus:(VDKLiveStatus)liveStatus {
+    if (liveStatus == VDKLiveStatusYes) {
+        // Create checkbox
+    }
+}
+
+// DEPRECATED delegate method
+//- (void)client:(VDKClient *)client didFinishLoadingIsLive:(VDKIsLive)isLive {
+//    if (isLive == VDKIsLiveYes) {
+//        // Create checkbox
+//    }
+//}
+
 -(void)client:(VDKClient *)client approvedPaymentMethodWithCode:(NSString *)paymentMethodCode {
-    // User approved a card, now upload it to merchant server --> braintree
+    // User approved a card --> upload it to merchant server in order to fwd it braintree
     NSString *urlString = [NSString stringWithFormat:@"%@%@",
                            SANDBOX_MERCHANT_URL, @"/card/payment_method_code"];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+
+    [activityOverlayView show];
+
     FSNConnection *connection =
     [FSNConnection
      withUrl:[NSURL URLWithString:urlString]
@@ -465,6 +543,8 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
          NSDictionary *response = (NSDictionary *)[c parseResult];
          NSString *paymentMethodToken = [response objectForKey:@"payment_method_token"];
 
+         [activityOverlayView dismissAnimated:YES];
+
          UIAlertView *alertView =
          [[UIAlertView alloc] initWithTitle:(!paymentMethodToken ? @"Error using card" : @"Rock on!")
                                     message:nil delegate:nil cancelButtonTitle:@"OK"
@@ -480,7 +560,7 @@ static NSString *SubmitCellIdentifier = @"SubmitCell";
      }
      progressBlock:nil];
     [connection start];
-
+    
 }
 
 -(void)clientDidLogout:(VDKClient *)client {

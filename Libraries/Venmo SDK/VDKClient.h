@@ -78,13 +78,21 @@ typedef enum {
     VDKEnvironmentSandbox,
 } VDKEnvironment;
 
-// Before the Venmo SDK goes public, you should check the VDKIsLive status. If this returns
-// VDKIsLiveNo, you should not show any widgets. If VDKIsLive is equal to
-// VDKIsLiveLoading, the request to download that status is nil.
+// Before your app is enabled with Venmo Touch, you should check the VDKLiveStatus status.
+// If this returns VDKLiveStatusNo, you should not show any widgets. If VDKLiveStatus is equal to
+// VDKLiveStatusLoading, the request to download that status is nil.
+// This is new as of Version 1.0.1, please do not use VDKIsLive (deprecated) anymore.
 typedef enum {
-    VDKIsLiveLoading,
-    VDKIsLiveYes,
+    VDKLiveStatusNo,
+    VDKLiveStatusYes,
+    VDKLiveStatusLoading,
+} VDKLiveStatus;
+
+// DEPRECATED in version 1.0.1 - Please use VDKLiveStatus (above)
+typedef enum {
     VDKIsLiveNo,
+    VDKIsLiveYes,
+    VDKIsLiveLoading,
 } VDKIsLive;
 
 @protocol VDKClientDelegate;
@@ -133,14 +141,17 @@ typedef enum {
 - (NSString *)venmoSDKSession;
 
 // Returns if the Venmo SDK is live. While the network request is still running, this will
-// return VDKIsLiveLoading. If this returns VDKIsLiveNo or VDKIsLiveLoading,
+// return VDKLiveStatusLoading. If this returns VDKLiveStatusNo or VDKLiveStatusLoading,
 // VDKCardWidget and VDKCheckboxWidget cannot be created successfully.
+- (VDKLiveStatus)liveStatus;
+
+// DEPRECATED in version 1.0.1 - Please use "- (VDKLiveStatus)liveStatus;" (above)
 - (VDKIsLive)isLive;
 
 // Refreshes the Venmo SDK by deleting any payment methods on file and re-downloading payment
 // methods for that user. This will be useful, for example, if the the device has no service
 // and did not successfully download cards previously
-// (will be denoted by [vdkClient isLive] == VDKIsLiveLoading).
+// (will be denoted by [vdkClient liveStatus] == VDKLiveStatusLoading).
 // 
 // If your app is displaying any VDKCardWidgets, they should be removed from the screen and
 // references to it should be set to nil. You do not have to edit or delete existing
@@ -171,8 +182,11 @@ typedef enum {
 - (void)client:(VDKClient *)client didReceivePaymentMethodOptionStatus:(VDKPaymentMethodOptionStatus)paymentMethodOptionStatus;
 
 // A network request is sent out to determine if the Venmo SDK is live. When it returns, this
-// delegate method will trigger, returning a VDKIsLive flag. If your app isn't showing
+// delegate method will trigger, returning a VDKLiveStatus flag. If your app isn't showing
 // the VDKCheckbox unless the Venmo SDK is live, this is a good place to do so.
+- (void)client:(VDKClient *)client didFinishLoadingLiveStatus:(VDKLiveStatus)liveStatus;
+
+// DEPRECATED in version 1.0.1 - Please use "- (void)client:(VDKClient *)client didFinishLoadingLiveStatus:(VDKLiveStatus)liveStatus;" (above)
 - (void)client:(VDKClient *)client didFinishLoadingIsLive:(VDKIsLive)isLive;
 
 // After a user gives permission to use this card and answers any security questions, this delegate
