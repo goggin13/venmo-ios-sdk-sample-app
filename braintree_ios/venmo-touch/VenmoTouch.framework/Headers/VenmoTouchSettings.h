@@ -1,0 +1,13 @@
+
+#ifndef braintree_ios_VenmoTouchSettings_h
+#define braintree_ios_VenmoTouchSettings_h
+
+#define BT_ENVIRONMENT @"sandbox"
+
+#define BT_SANDBOX_MERCHANT_ID @"t34jgpz7ktn4rsfm"
+#define BT_SANDBOX_CLIENT_SIDE_ENCRYPTION_KEY @"MIIBCgKCAQEA7zuPxt75mzMTfMqHb/1p/FOtdanLmN/GuGMDPGhz/t3ZaGZuI4BLpVPFTFwe086vMTMPh2NGpF6CZ6aPV3n3m5HoEm++yGTFE9/6n863gl4aszrJNWRWB68lYxB27fqDyk9QGBS95Kb03cieQbtqYS25zbc7P2XEOHv+XfypC5YjVMdTZjq1zzQ6wg6NZ7mpGCChhznjFXqm2uh3qM7MX0CsowWRFBHjTiJoRgTuNHwKp6mC3i8UDd1zJws94Oo87vpNVnFKVP2uqRyYrF4rlEw7CCDG8/llPDpK2ADBFBWyPK49F/8U5NZPLS7DqtuBN7Oq18SpcXczrcP1ZhBJSwIDAQAB"
+
+#define BT_PRODUCTION_MERCHANT_ID @"your_production_merchant_id"
+#define BT_PRODUCTION_CLIENT_SIDE_ENCRYPTION_KEY @"your_production_client_side_encryption_key"
+
+#endif
