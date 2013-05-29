@@ -95,23 +95,15 @@
 
 #pragma mark - BTPaymentViewControllerDelegate
 
-- (void)paymentViewController:(BTPaymentViewController *)paymentViewController didSubmitCardWithInfo:(NSDictionary *)cardInfo andCardInfoEncrypted:(NSDictionary *)cardInfoEncrypted {
-    // Test code only. It preprends "enc_" to every key name because our test server assumes
-    // all encrypted values are prepended with "enc_".
-    NSMutableDictionary *cardInfoEncryptedNew = [NSMutableDictionary dictionaryWithDictionary:cardInfoEncrypted];
-    for (NSString *key in cardInfoEncryptedNew.allKeys) {
-        [cardInfoEncryptedNew setObject:[cardInfoEncryptedNew objectForKey:key]
-                                 forKey:[NSString stringWithFormat:@"enc_%@", key]];
-        [cardInfoEncryptedNew removeObjectForKey:key];
-    }
-    // End test code.
-
-    [self savePaymentInfoToServer:cardInfoEncryptedNew withURLName:@"/card/add"];
+- (void)paymentViewController:(BTPaymentViewController *)paymentViewController
+        didSubmitCardWithInfo:(NSDictionary *)cardInfo
+         andCardInfoEncrypted:(NSDictionary *)cardInfoEncrypted {
+    [self savePaymentInfoToServer:cardInfoEncrypted withURLName:@"/card/add"];
 }
 
 - (void)paymentViewController:(BTPaymentViewController *)paymentViewController didAuthorizeCardWithPaymentMethodCode:(NSString *)paymentMethodCode {
-    [self savePaymentInfoToServer:[NSDictionary dictionaryWithObject:paymentMethodCode forKey:@"enc_payment_method_code"]
-     withURLName:@"/card/payment_method_code"];
+    [self savePaymentInfoToServer:[NSDictionary dictionaryWithObject:paymentMethodCode forKey:@"payment_method_code"]
+                      withURLName:@"/card/payment_method_code"];
 }
 
 
