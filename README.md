@@ -5,7 +5,7 @@ You may modify the constants defined in `VenmoTouchSettings.h` to your own crede
 
 ## Venmo SDK Documentation ##
 
-Visit [here](https://touch.venmo.com/docs) for the full documentation and usage of the Venmo SDK.
+Visit [here](https://www.braintreepayments.com/docs/ios) for the full documentation and usage of the iOS SDK.
 
 ## Intro ##
 
