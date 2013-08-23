@@ -1,0 +1,10 @@
+PODS:
+  - Braintree (2.1.1)
+
+DEPENDENCIES:
+  - Braintree (~> 2.1.1)
+
+SPEC CHECKSUMS:
+  Braintree: 5cc5e255963f9b7d863c6c499d8a6add08c14911
+
+COCOAPODS: 0.23.0

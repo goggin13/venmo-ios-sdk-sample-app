@@ -1,6 +1,14 @@
 
 #import "AppDelegate.h"
 
+// Braintree Sandbox testing environment
+#define TEST_SANDBOX_BRAINTREE_KEY @"MIIBCgKCAQEA7zuPxt75mzMTfMqHb/1p/FOtdanLmN/GuGMDPGhz/t3ZaGZuI4BLpVPFTFwe086vMTMPh2NGpF6CZ6aPV3n3m5HoEm++yGTFE9/6n863gl4aszrJNWRWB68lYxB27fqDyk9QGBS95Kb03cieQbtqYS25zbc7P2XEOHv+XfypC5YjVMdTZjq1zzQ6wg6NZ7mpGCChhznjFXqm2uh3qM7MX0CsowWRFBHjTiJoRgTuNHwKp6mC3i8UDd1zJws94Oo87vpNVnFKVP2uqRyYrF4rlEw7CCDG8/llPDpK2ADBFBWyPK49F/8U5NZPLS7DqtuBN7Oq18SpcXczrcP1ZhBJSwIDAQAB"
+#define TEST_SANDBOX_APP_ID @"t34jgpz7ktn4rsfm"
+
+// Braintree Production testing environment, no keys here
+#define TEST_PRODUCTION_BRAINTREE_KEY @"test_production_braintree_key"
+#define TEST_PRODUCTION_APP_ID @"test_production_app_id"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -34,13 +42,15 @@
 - (void) initVTClient {
     if ([BT_ENVIRONMENT isEqualToString:@"sandbox"]) {
         [VTClient
-         startWithMerchantID:BT_SANDBOX_MERCHANT_ID
-         braintreeClientSideEncryptionKey:BT_SANDBOX_CLIENT_SIDE_ENCRYPTION_KEY
+         startWithMerchantID:TEST_SANDBOX_APP_ID
+         customerEmail:nil
+         braintreeClientSideEncryptionKey:TEST_SANDBOX_BRAINTREE_KEY
          environment:VTEnvironmentSandbox];
     } else {
         [VTClient
-         startWithMerchantID:BT_PRODUCTION_MERCHANT_ID
-         braintreeClientSideEncryptionKey:BT_PRODUCTION_CLIENT_SIDE_ENCRYPTION_KEY
+         startWithMerchantID:TEST_PRODUCTION_BRAINTREE_KEY
+         customerEmail:nil
+         braintreeClientSideEncryptionKey:TEST_PRODUCTION_APP_ID
          environment:VTEnvironmentProduction];
     }
 }
@@ -72,7 +82,7 @@
 
 // Only works in VTEnvironmentSandbox - restarts the user on this device so she can add new cards from a clean plate
 - (void)restartButtonTapped {
-    [[VTClient sharedClient] restartSession];
+    [[VTClient sharedVTClient] restartSession];
 }
 
 // Easter egg! Shake to choose a random color of the Venmo Touch button (if it's being displayed)
@@ -81,7 +91,7 @@
         BTPaymentViewController *paymentViewController = [[((UINavigationController *)[self.viewController presentedViewController]) viewControllers] objectAtIndex:0];
 
         if (paymentViewController
-            && [[VTClient sharedClient] paymentMethodOptionStatus] == VTPaymentMethodOptionStatusYes) {
+            && [[VTClient sharedVTClient] paymentMethodOptionStatus] == VTPaymentMethodOptionStatusYes) {
             
             CGFloat red   = arc4random_uniform(256);
             CGFloat green = arc4random_uniform(256);
@@ -147,6 +157,7 @@
                  [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Saved your card!" delegate:nil
                                    cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
              }];
+             [[VTClient sharedVTClient] refresh];
 
          } else {
              // The card did not save correctly, so show the error from server with convenenience method `showErrorWithTitle`

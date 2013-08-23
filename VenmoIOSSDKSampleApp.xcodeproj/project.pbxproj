@@ -1,783 +1,748 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		9C3A63E51656DC9E004C7F73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A63E41656DC9E004C7F73 /* UIKit.framework */; };
-		9C3A63E71656DC9E004C7F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A63E61656DC9E004C7F73 /* Foundation.framework */; };
-		9C3A63E91656DC9E004C7F73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A63E81656DC9E004C7F73 /* CoreGraphics.framework */; };
-		9C3A63EF1656DC9E004C7F73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63ED1656DC9E004C7F73 /* InfoPlist.strings */; };
-		9C3A63F11656DC9E004C7F73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A63F01656DC9E004C7F73 /* main.m */; };
-		9C3A63F51656DC9E004C7F73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A63F41656DC9E004C7F73 /* AppDelegate.m */; };
-		9C3A63F71656DC9E004C7F73 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63F61656DC9E004C7F73 /* Default.png */; };
-		9C3A63F91656DC9E004C7F73 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63F81656DC9E004C7F73 /* Default@2x.png */; };
-		9C3A63FB1656DC9E004C7F73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */; };
-		9C3A64351656E141004C7F73 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3A64341656E141004C7F73 /* Security.framework */; };
-		9C8BC634170DDE8C00388EB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BC633170DDE8C00388EB3 /* QuartzCore.framework */; };
-		9C8BC7E9170DE27500388EB3 /* BTPayment-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A1170DE19E00388EB3 /* BTPayment-Prefix.pch */; };
-		9C8BC7EA170DE27500388EB3 /* BTPaymentActivityOverlayView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A2170DE19E00388EB3 /* BTPaymentActivityOverlayView.h */; };
-		9C8BC7EB170DE27500388EB3 /* BTPaymentActivityOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A3170DE19E00388EB3 /* BTPaymentActivityOverlayView.m */; };
-		9C8BC7EC170DE27500388EB3 /* BTPaymentCardType.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A4170DE19E00388EB3 /* BTPaymentCardType.h */; };
-		9C8BC7ED170DE27500388EB3 /* BTPaymentCardType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A5170DE19E00388EB3 /* BTPaymentCardType.m */; };
-		9C8BC7EE170DE27500388EB3 /* BTPaymentCardUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A6170DE19E00388EB3 /* BTPaymentCardUtils.h */; };
-		9C8BC7EF170DE27500388EB3 /* BTPaymentCardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A7170DE19E00388EB3 /* BTPaymentCardUtils.m */; };
-		9C8BC7F0170DE27500388EB3 /* BTPaymentFormTextField.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A8170DE19E00388EB3 /* BTPaymentFormTextField.h */; };
-		9C8BC7F1170DE27500388EB3 /* BTPaymentFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7A9170DE19E00388EB3 /* BTPaymentFormTextField.m */; };
-		9C8BC7F2170DE27500388EB3 /* BTPaymentFormView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7AA170DE19E00388EB3 /* BTPaymentFormView.h */; };
-		9C8BC7F3170DE27500388EB3 /* BTPaymentFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7AB170DE19E00388EB3 /* BTPaymentFormView.m */; };
-		9C8BC7F4170DE27500388EB3 /* BTPaymentViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7AC170DE19E00388EB3 /* BTPaymentViewController.h */; };
-		9C8BC7F5170DE27500388EB3 /* BTPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BC7AD170DE19E00388EB3 /* BTPaymentViewController.m */; };
-		9C8BC7F6170DE28000388EB3 /* VenmoTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BC7D2170DE19E00388EB3 /* VenmoTouch.framework */; };
-		9C8BC7F7170DE28500388EB3 /* BraintreeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BC77E170DE19E00388EB3 /* BraintreeResources.bundle */; };
-		9C8BC7F8170DE28800388EB3 /* VenmoTouchResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BC7D3170DE19E00388EB3 /* VenmoTouchResources.bundle */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9C8BC7DB170DE19E00388EB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9CB582861704EC2700448E5C;
-			remoteInfo = BTEncryption;
-		};
-		9C8BC7DD170DE19E00388EB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9CB582941704EC2700448E5C;
-			remoteInfo = BTEncryptionTests;
-		};
-		9C8BC7DF170DE19E00388EB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C2865B11704F995000C411C;
-			remoteInfo = BTPayment;
-		};
-		9C8BC7E1170DE19E00388EB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C2865BF1704F995000C411C;
-			remoteInfo = BTPaymentTests;
-		};
-		9C8BC7E3170DE19E00388EB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C28664517053C33000C411C;
-			remoteInfo = SampleCheckout;
-		};
-		9C8BC7E5170DE19E00388EB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C28666917053C34000C411C;
-			remoteInfo = SampleCheckoutTests;
-		};
-		9C8BC7E7170DE19E00388EB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9CB3D6E1170639440080631F;
-			remoteInfo = BraintreeResources;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		9C3A63E01656DC9E004C7F73 /* VenmoIOSSDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenmoIOSSDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C3A63E41656DC9E004C7F73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9C3A63E61656DC9E004C7F73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9C3A63E81656DC9E004C7F73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9C3A63EC1656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenmoIOSSDKSampleApp-Info.plist"; sourceTree = "<group>"; };
-		9C3A63EE1656DC9E004C7F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9C3A63F01656DC9E004C7F73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C3A63F21656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoIOSSDKSampleApp-Prefix.pch"; sourceTree = "<group>"; };
-		9C3A63F31656DC9E004C7F73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9C3A63F41656DC9E004C7F73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9C3A63F61656DC9E004C7F73 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9C3A63F81656DC9E004C7F73 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9C3A64341656E141004C7F73 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		9C8BC633170DDE8C00388EB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9C8BC762170DE19D00388EB3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "braintree-ios.xcodeproj"; sourceTree = "<group>"; };
-		9C8BC768170DE19E00388EB3 /* BraintreeResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BraintreeResources-Info.plist"; sourceTree = "<group>"; };
-		9C8BC769170DE19E00388EB3 /* BraintreeResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BraintreeResources-Prefix.pch"; sourceTree = "<group>"; };
-		9C8BC76A170DE19E00388EB3 /* BTAmex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTAmex.png; sourceTree = "<group>"; };
-		9C8BC76B170DE19E00388EB3 /* BTAmex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTAmex@2x.png"; sourceTree = "<group>"; };
-		9C8BC76C170DE19E00388EB3 /* BTAmexCVV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTAmexCVV.png; sourceTree = "<group>"; };
-		9C8BC76D170DE19E00388EB3 /* BTAmexCVV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTAmexCVV@2x.png"; sourceTree = "<group>"; };
-		9C8BC76E170DE19E00388EB3 /* BTCVV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTCVV.png; sourceTree = "<group>"; };
-		9C8BC76F170DE19E00388EB3 /* BTCVV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTCVV@2x.png"; sourceTree = "<group>"; };
-		9C8BC770170DE19E00388EB3 /* BTDinersClub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTDinersClub.png; sourceTree = "<group>"; };
-		9C8BC771170DE19E00388EB3 /* BTDinersClub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTDinersClub@2x.png"; sourceTree = "<group>"; };
-		9C8BC772170DE19E00388EB3 /* BTDiscover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTDiscover.png; sourceTree = "<group>"; };
-		9C8BC773170DE19E00388EB3 /* BTDiscover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTDiscover@2x.png"; sourceTree = "<group>"; };
-		9C8BC774170DE19E00388EB3 /* BTGenericCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTGenericCard.png; sourceTree = "<group>"; };
-		9C8BC775170DE19E00388EB3 /* BTGenericCard@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTGenericCard@2X.png"; sourceTree = "<group>"; };
-		9C8BC776170DE19E00388EB3 /* BTJCB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTJCB.png; sourceTree = "<group>"; };
-		9C8BC777170DE19E00388EB3 /* BTJCB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTJCB@2x.png"; sourceTree = "<group>"; };
-		9C8BC778170DE19E00388EB3 /* BTMastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTMastercard.png; sourceTree = "<group>"; };
-		9C8BC779170DE19E00388EB3 /* BTMastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTMastercard@2x.png"; sourceTree = "<group>"; };
-		9C8BC77A170DE19E00388EB3 /* BTVisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTVisa.png; sourceTree = "<group>"; };
-		9C8BC77B170DE19E00388EB3 /* BTVisa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BTVisa@2x.png"; sourceTree = "<group>"; };
-		9C8BC77D170DE19E00388EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9C8BC77E170DE19E00388EB3 /* BraintreeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BraintreeResources.bundle; sourceTree = "<group>"; };
-		9C8BC780170DE19E00388EB3 /* BTAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAES.h; sourceTree = "<group>"; };
-		9C8BC781170DE19E00388EB3 /* BTAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAES.m; sourceTree = "<group>"; };
-		9C8BC782170DE19E00388EB3 /* BTEncryption-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTEncryption-Prefix.pch"; sourceTree = "<group>"; };
-		9C8BC783170DE19E00388EB3 /* BTEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTEncryption.h; sourceTree = "<group>"; };
-		9C8BC784170DE19E00388EB3 /* BTEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTEncryption.m; sourceTree = "<group>"; };
-		9C8BC785170DE19E00388EB3 /* BTEncyption-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTEncyption-Prefix.pch"; sourceTree = "<group>"; };
-		9C8BC786170DE19E00388EB3 /* BTRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRandom.h; sourceTree = "<group>"; };
-		9C8BC787170DE19E00388EB3 /* BTRandom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRandom.m; sourceTree = "<group>"; };
-		9C8BC788170DE19E00388EB3 /* BTRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSA.h; sourceTree = "<group>"; };
-		9C8BC789170DE19E00388EB3 /* BTRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSA.m; sourceTree = "<group>"; };
-		9C8BC78A170DE19E00388EB3 /* BTSecKeyWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSecKeyWrapper.h; sourceTree = "<group>"; };
-		9C8BC78B170DE19E00388EB3 /* BTSecKeyWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSecKeyWrapper.m; sourceTree = "<group>"; };
-		9C8BC78C170DE19E00388EB3 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		9C8BC78D170DE19E00388EB3 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		9C8BC78E170DE19E00388EB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		9C8BC790170DE19E00388EB3 /* BTAESTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAESTest.h; sourceTree = "<group>"; };
-		9C8BC791170DE19E00388EB3 /* BTAESTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAESTest.m; sourceTree = "<group>"; };
-		9C8BC792170DE19E00388EB3 /* BTDecrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTDecrypt.h; sourceTree = "<group>"; };
-		9C8BC793170DE19E00388EB3 /* BTDecrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTDecrypt.m; sourceTree = "<group>"; };
-		9C8BC794170DE19E00388EB3 /* BTEncryptionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTEncryptionTest.h; sourceTree = "<group>"; };
-		9C8BC795170DE19E00388EB3 /* BTEncryptionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTEncryptionTest.m; sourceTree = "<group>"; };
-		9C8BC796170DE19E00388EB3 /* BTEncryptionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTEncryptionTests-Info.plist"; sourceTree = "<group>"; };
-		9C8BC797170DE19E00388EB3 /* BTRandomTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRandomTest.h; sourceTree = "<group>"; };
-		9C8BC798170DE19E00388EB3 /* BTRandomTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRandomTest.m; sourceTree = "<group>"; };
-		9C8BC799170DE19E00388EB3 /* BTRSAKeysTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSAKeysTest.h; sourceTree = "<group>"; };
-		9C8BC79A170DE19E00388EB3 /* BTRSAKeysTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSAKeysTest.m; sourceTree = "<group>"; };
-		9C8BC79B170DE19E00388EB3 /* BTRSATest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTRSATest.h; sourceTree = "<group>"; };
-		9C8BC79C170DE19E00388EB3 /* BTRSATest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTRSATest.m; sourceTree = "<group>"; };
-		9C8BC79D170DE19E00388EB3 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		9C8BC79E170DE19E00388EB3 /* NSDataBase64Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDataBase64Test.h; sourceTree = "<group>"; };
-		9C8BC79F170DE19E00388EB3 /* NSDataBase64Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDataBase64Test.m; sourceTree = "<group>"; };
-		9C8BC7A1170DE19E00388EB3 /* BTPayment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTPayment-Prefix.pch"; sourceTree = "<group>"; };
-		9C8BC7A2170DE19E00388EB3 /* BTPaymentActivityOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentActivityOverlayView.h; sourceTree = "<group>"; };
-		9C8BC7A3170DE19E00388EB3 /* BTPaymentActivityOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentActivityOverlayView.m; sourceTree = "<group>"; };
-		9C8BC7A4170DE19E00388EB3 /* BTPaymentCardType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentCardType.h; sourceTree = "<group>"; };
-		9C8BC7A5170DE19E00388EB3 /* BTPaymentCardType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentCardType.m; sourceTree = "<group>"; };
-		9C8BC7A6170DE19E00388EB3 /* BTPaymentCardUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentCardUtils.h; sourceTree = "<group>"; };
-		9C8BC7A7170DE19E00388EB3 /* BTPaymentCardUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentCardUtils.m; sourceTree = "<group>"; };
-		9C8BC7A8170DE19E00388EB3 /* BTPaymentFormTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentFormTextField.h; sourceTree = "<group>"; };
-		9C8BC7A9170DE19E00388EB3 /* BTPaymentFormTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentFormTextField.m; sourceTree = "<group>"; };
-		9C8BC7AA170DE19E00388EB3 /* BTPaymentFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentFormView.h; sourceTree = "<group>"; };
-		9C8BC7AB170DE19E00388EB3 /* BTPaymentFormView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentFormView.m; sourceTree = "<group>"; };
-		9C8BC7AC170DE19E00388EB3 /* BTPaymentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentViewController.h; sourceTree = "<group>"; };
-		9C8BC7AD170DE19E00388EB3 /* BTPaymentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentViewController.m; sourceTree = "<group>"; };
-		9C8BC7AF170DE19E00388EB3 /* BTPaymentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTPaymentTests-Info.plist"; sourceTree = "<group>"; };
-		9C8BC7B0170DE19E00388EB3 /* BTPaymentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPaymentTests.h; sourceTree = "<group>"; };
-		9C8BC7B1170DE19E00388EB3 /* BTPaymentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPaymentTests.m; sourceTree = "<group>"; };
-		9C8BC7B3170DE19E00388EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9C8BC7B4170DE19E00388EB3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9C8BC7B6170DE19E00388EB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9C8BC7B7170DE19E00388EB3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9C8BC7B8170DE19E00388EB3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9C8BC7BA170DE19E00388EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9C8BC7BC170DE19E00388EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCViewController_iPad.xib; sourceTree = "<group>"; };
-		9C8BC7BE170DE19E00388EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCViewController_iPhone.xib; sourceTree = "<group>"; };
-		9C8BC7BF170DE19E00388EB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C8BC7C0170DE19E00388EB3 /* SampleCheckout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCheckout-Info.plist"; sourceTree = "<group>"; };
-		9C8BC7C1170DE19E00388EB3 /* SampleCheckout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleCheckout-Prefix.pch"; sourceTree = "<group>"; };
-		9C8BC7C2170DE19E00388EB3 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
-		9C8BC7C3170DE19E00388EB3 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
-		9C8BC7C4170DE19E00388EB3 /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
-		9C8BC7C5170DE19E00388EB3 /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
-		9C8BC7C8170DE19E00388EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9C8BC7C9170DE19E00388EB3 /* SampleCheckoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCheckoutTests-Info.plist"; sourceTree = "<group>"; };
-		9C8BC7CA170DE19E00388EB3 /* SampleCheckoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleCheckoutTests.h; sourceTree = "<group>"; };
-		9C8BC7CB170DE19E00388EB3 /* SampleCheckoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCheckoutTests.m; sourceTree = "<group>"; };
-		9C8BC7CC170DE19E00388EB3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		9C8BC7CD170DE19E00388EB3 /* LICENSES */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSES; sourceTree = "<group>"; };
-		9C8BC7CE170DE19E00388EB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		9C8BC7D0170DE19E00388EB3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9C8BC7D1170DE19E00388EB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		9C8BC7D2170DE19E00388EB3 /* VenmoTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VenmoTouch.framework; sourceTree = "<group>"; };
-		9C8BC7D3170DE19E00388EB3 /* VenmoTouchResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VenmoTouchResources.bundle; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9C3A63DD1656DC9E004C7F73 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C3A64351656E141004C7F73 /* Security.framework in Frameworks */,
-				9C8BC634170DDE8C00388EB3 /* QuartzCore.framework in Frameworks */,
-				9C3A63E51656DC9E004C7F73 /* UIKit.framework in Frameworks */,
-				9C3A63E71656DC9E004C7F73 /* Foundation.framework in Frameworks */,
-				9C3A63E91656DC9E004C7F73 /* CoreGraphics.framework in Frameworks */,
-				9C8BC7F6170DE28000388EB3 /* VenmoTouch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		9C3A63D51656DC9E004C7F73 = {
-			isa = PBXGroup;
-			children = (
-				9C8BC761170DE19D00388EB3 /* braintree_ios */,
-				9C3A63EA1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */,
-				9C3A63E31656DC9E004C7F73 /* Frameworks */,
-				9C3A63E11656DC9E004C7F73 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		9C3A63E11656DC9E004C7F73 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9C3A63E01656DC9E004C7F73 /* VenmoIOSSDKSampleApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9C3A63E31656DC9E004C7F73 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9C3A64341656E141004C7F73 /* Security.framework */,
-				9C3A63E41656DC9E004C7F73 /* UIKit.framework */,
-				9C3A63E61656DC9E004C7F73 /* Foundation.framework */,
-				9C3A63E81656DC9E004C7F73 /* CoreGraphics.framework */,
-				9C8BC633170DDE8C00388EB3 /* QuartzCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9C3A63EA1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */ = {
-			isa = PBXGroup;
-			children = (
-				9C3A63F31656DC9E004C7F73 /* AppDelegate.h */,
-				9C3A63F41656DC9E004C7F73 /* AppDelegate.m */,
-				9C3A63EB1656DC9E004C7F73 /* Supporting Files */,
-			);
-			path = VenmoIOSSDKSampleApp;
-			sourceTree = "<group>";
-		};
-		9C3A63EB1656DC9E004C7F73 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9C3A63EC1656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Info.plist */,
-				9C3A63ED1656DC9E004C7F73 /* InfoPlist.strings */,
-				9C3A63F01656DC9E004C7F73 /* main.m */,
-				9C3A63F21656DC9E004C7F73 /* VenmoIOSSDKSampleApp-Prefix.pch */,
-				9C3A63F61656DC9E004C7F73 /* Default.png */,
-				9C3A63F81656DC9E004C7F73 /* Default@2x.png */,
-				9C3A63FA1656DC9E004C7F73 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9C8BC761170DE19D00388EB3 /* braintree_ios */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC762170DE19D00388EB3 /* .gitignore */,
-				9C8BC763170DE19D00388EB3 /* braintree */,
-				9C8BC7CC170DE19E00388EB3 /* CHANGELOG.md */,
-				9C8BC7CD170DE19E00388EB3 /* LICENSES */,
-				9C8BC7CE170DE19E00388EB3 /* README.md */,
-				9C8BC7CF170DE19E00388EB3 /* venmo-touch */,
-			);
-			path = braintree_ios;
-			sourceTree = "<group>";
-		};
-		9C8BC763170DE19D00388EB3 /* braintree */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */,
-				9C8BC767170DE19E00388EB3 /* BraintreeResources */,
-				9C8BC77E170DE19E00388EB3 /* BraintreeResources.bundle */,
-				9C8BC77F170DE19E00388EB3 /* BTEncryption */,
-				9C8BC78F170DE19E00388EB3 /* BTEncryptionTests */,
-				9C8BC7A0170DE19E00388EB3 /* BTPayment */,
-				9C8BC7AE170DE19E00388EB3 /* BTPaymentTests */,
-				9C8BC7B4170DE19E00388EB3 /* LICENSE */,
-				9C8BC7B5170DE19E00388EB3 /* SampleCheckout */,
-				9C8BC7C6170DE19E00388EB3 /* SampleCheckoutTests */,
-			);
-			path = braintree;
-			sourceTree = "<group>";
-		};
-		9C8BC765170DE19D00388EB3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC7DC170DE19E00388EB3 /* libBTEncryption.a */,
-				9C8BC7DE170DE19E00388EB3 /* BTEncryptionTests.octest */,
-				9C8BC7E0170DE19E00388EB3 /* libBTPayment.a */,
-				9C8BC7E2170DE19E00388EB3 /* BTPaymentTests.octest */,
-				9C8BC7E4170DE19E00388EB3 /* SampleCheckout.app */,
-				9C8BC7E6170DE19E00388EB3 /* SampleCheckoutTests.octest */,
-				9C8BC7E8170DE19E00388EB3 /* BraintreeResources.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9C8BC767170DE19E00388EB3 /* BraintreeResources */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC768170DE19E00388EB3 /* BraintreeResources-Info.plist */,
-				9C8BC769170DE19E00388EB3 /* BraintreeResources-Prefix.pch */,
-				9C8BC76A170DE19E00388EB3 /* BTAmex.png */,
-				9C8BC76B170DE19E00388EB3 /* BTAmex@2x.png */,
-				9C8BC76C170DE19E00388EB3 /* BTAmexCVV.png */,
-				9C8BC76D170DE19E00388EB3 /* BTAmexCVV@2x.png */,
-				9C8BC76E170DE19E00388EB3 /* BTCVV.png */,
-				9C8BC76F170DE19E00388EB3 /* BTCVV@2x.png */,
-				9C8BC770170DE19E00388EB3 /* BTDinersClub.png */,
-				9C8BC771170DE19E00388EB3 /* BTDinersClub@2x.png */,
-				9C8BC772170DE19E00388EB3 /* BTDiscover.png */,
-				9C8BC773170DE19E00388EB3 /* BTDiscover@2x.png */,
-				9C8BC774170DE19E00388EB3 /* BTGenericCard.png */,
-				9C8BC775170DE19E00388EB3 /* BTGenericCard@2X.png */,
-				9C8BC776170DE19E00388EB3 /* BTJCB.png */,
-				9C8BC777170DE19E00388EB3 /* BTJCB@2x.png */,
-				9C8BC778170DE19E00388EB3 /* BTMastercard.png */,
-				9C8BC779170DE19E00388EB3 /* BTMastercard@2x.png */,
-				9C8BC77A170DE19E00388EB3 /* BTVisa.png */,
-				9C8BC77B170DE19E00388EB3 /* BTVisa@2x.png */,
-				9C8BC77C170DE19E00388EB3 /* InfoPlist.strings */,
-			);
-			path = BraintreeResources;
-			sourceTree = "<group>";
-		};
-		9C8BC77F170DE19E00388EB3 /* BTEncryption */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC780170DE19E00388EB3 /* BTAES.h */,
-				9C8BC781170DE19E00388EB3 /* BTAES.m */,
-				9C8BC782170DE19E00388EB3 /* BTEncryption-Prefix.pch */,
-				9C8BC783170DE19E00388EB3 /* BTEncryption.h */,
-				9C8BC784170DE19E00388EB3 /* BTEncryption.m */,
-				9C8BC785170DE19E00388EB3 /* BTEncyption-Prefix.pch */,
-				9C8BC786170DE19E00388EB3 /* BTRandom.h */,
-				9C8BC787170DE19E00388EB3 /* BTRandom.m */,
-				9C8BC788170DE19E00388EB3 /* BTRSA.h */,
-				9C8BC789170DE19E00388EB3 /* BTRSA.m */,
-				9C8BC78A170DE19E00388EB3 /* BTSecKeyWrapper.h */,
-				9C8BC78B170DE19E00388EB3 /* BTSecKeyWrapper.m */,
-				9C8BC78C170DE19E00388EB3 /* NSData+Base64.h */,
-				9C8BC78D170DE19E00388EB3 /* NSData+Base64.m */,
-				9C8BC78E170DE19E00388EB3 /* README.md */,
-			);
-			path = BTEncryption;
-			sourceTree = "<group>";
-		};
-		9C8BC78F170DE19E00388EB3 /* BTEncryptionTests */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC790170DE19E00388EB3 /* BTAESTest.h */,
-				9C8BC791170DE19E00388EB3 /* BTAESTest.m */,
-				9C8BC792170DE19E00388EB3 /* BTDecrypt.h */,
-				9C8BC793170DE19E00388EB3 /* BTDecrypt.m */,
-				9C8BC794170DE19E00388EB3 /* BTEncryptionTest.h */,
-				9C8BC795170DE19E00388EB3 /* BTEncryptionTest.m */,
-				9C8BC796170DE19E00388EB3 /* BTEncryptionTests-Info.plist */,
-				9C8BC797170DE19E00388EB3 /* BTRandomTest.h */,
-				9C8BC798170DE19E00388EB3 /* BTRandomTest.m */,
-				9C8BC799170DE19E00388EB3 /* BTRSAKeysTest.h */,
-				9C8BC79A170DE19E00388EB3 /* BTRSAKeysTest.m */,
-				9C8BC79B170DE19E00388EB3 /* BTRSATest.h */,
-				9C8BC79C170DE19E00388EB3 /* BTRSATest.m */,
-				9C8BC79D170DE19E00388EB3 /* InfoPlist.strings */,
-				9C8BC79E170DE19E00388EB3 /* NSDataBase64Test.h */,
-				9C8BC79F170DE19E00388EB3 /* NSDataBase64Test.m */,
-			);
-			path = BTEncryptionTests;
-			sourceTree = "<group>";
-		};
-		9C8BC7A0170DE19E00388EB3 /* BTPayment */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC7A1170DE19E00388EB3 /* BTPayment-Prefix.pch */,
-				9C8BC7A2170DE19E00388EB3 /* BTPaymentActivityOverlayView.h */,
-				9C8BC7A3170DE19E00388EB3 /* BTPaymentActivityOverlayView.m */,
-				9C8BC7A4170DE19E00388EB3 /* BTPaymentCardType.h */,
-				9C8BC7A5170DE19E00388EB3 /* BTPaymentCardType.m */,
-				9C8BC7A6170DE19E00388EB3 /* BTPaymentCardUtils.h */,
-				9C8BC7A7170DE19E00388EB3 /* BTPaymentCardUtils.m */,
-				9C8BC7A8170DE19E00388EB3 /* BTPaymentFormTextField.h */,
-				9C8BC7A9170DE19E00388EB3 /* BTPaymentFormTextField.m */,
-				9C8BC7AA170DE19E00388EB3 /* BTPaymentFormView.h */,
-				9C8BC7AB170DE19E00388EB3 /* BTPaymentFormView.m */,
-				9C8BC7AC170DE19E00388EB3 /* BTPaymentViewController.h */,
-				9C8BC7AD170DE19E00388EB3 /* BTPaymentViewController.m */,
-			);
-			path = BTPayment;
-			sourceTree = "<group>";
-		};
-		9C8BC7AE170DE19E00388EB3 /* BTPaymentTests */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC7AF170DE19E00388EB3 /* BTPaymentTests-Info.plist */,
-				9C8BC7B0170DE19E00388EB3 /* BTPaymentTests.h */,
-				9C8BC7B1170DE19E00388EB3 /* BTPaymentTests.m */,
-				9C8BC7B2170DE19E00388EB3 /* InfoPlist.strings */,
-			);
-			path = BTPaymentTests;
-			sourceTree = "<group>";
-		};
-		9C8BC7B5170DE19E00388EB3 /* SampleCheckout */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC7B6170DE19E00388EB3 /* Default-568h@2x.png */,
-				9C8BC7B7170DE19E00388EB3 /* Default.png */,
-				9C8BC7B8170DE19E00388EB3 /* Default@2x.png */,
-				9C8BC7B9170DE19E00388EB3 /* InfoPlist.strings */,
-				9C8BC7BB170DE19E00388EB3 /* SCViewController_iPad.xib */,
-				9C8BC7BD170DE19E00388EB3 /* SCViewController_iPhone.xib */,
-				9C8BC7BF170DE19E00388EB3 /* main.m */,
-				9C8BC7C0170DE19E00388EB3 /* SampleCheckout-Info.plist */,
-				9C8BC7C1170DE19E00388EB3 /* SampleCheckout-Prefix.pch */,
-				9C8BC7C2170DE19E00388EB3 /* SCAppDelegate.h */,
-				9C8BC7C3170DE19E00388EB3 /* SCAppDelegate.m */,
-				9C8BC7C4170DE19E00388EB3 /* SCViewController.h */,
-				9C8BC7C5170DE19E00388EB3 /* SCViewController.m */,
-			);
-			path = SampleCheckout;
-			sourceTree = "<group>";
-		};
-		9C8BC7C6170DE19E00388EB3 /* SampleCheckoutTests */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC7C7170DE19E00388EB3 /* InfoPlist.strings */,
-				9C8BC7C9170DE19E00388EB3 /* SampleCheckoutTests-Info.plist */,
-				9C8BC7CA170DE19E00388EB3 /* SampleCheckoutTests.h */,
-				9C8BC7CB170DE19E00388EB3 /* SampleCheckoutTests.m */,
-			);
-			path = SampleCheckoutTests;
-			sourceTree = "<group>";
-		};
-		9C8BC7CF170DE19E00388EB3 /* venmo-touch */ = {
-			isa = PBXGroup;
-			children = (
-				9C8BC7D0170DE19E00388EB3 /* LICENSE */,
-				9C8BC7D1170DE19E00388EB3 /* README.md */,
-				9C8BC7D2170DE19E00388EB3 /* VenmoTouch.framework */,
-				9C8BC7D3170DE19E00388EB3 /* VenmoTouchResources.bundle */,
-			);
-			path = "venmo-touch";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		9C3A63DF1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C3A64041656DC9E004C7F73 /* Build configuration list for PBXNativeTarget "VenmoIOSSDKSampleApp" */;
-			buildPhases = (
-				9C3A63DC1656DC9E004C7F73 /* Sources */,
-				9C3A63DD1656DC9E004C7F73 /* Frameworks */,
-				9C3A63DE1656DC9E004C7F73 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = VenmoIOSSDKSampleApp;
-			productName = VenmoIOSSDKSampleApp;
-			productReference = 9C3A63E01656DC9E004C7F73 /* VenmoIOSSDKSampleApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		9C3A63D71656DC9E004C7F73 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = Venmo;
-			};
-			buildConfigurationList = 9C3A63DA1656DC9E004C7F73 /* Build configuration list for PBXProject "VenmoIOSSDKSampleApp" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 9C3A63D51656DC9E004C7F73;
-			productRefGroup = 9C3A63E11656DC9E004C7F73 /* Products */;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9C8BC765170DE19D00388EB3 /* Products */;
-					ProjectRef = 9C8BC764170DE19D00388EB3 /* braintree-ios.xcodeproj */;
-				},
-			);
-			projectRoot = "";
-			targets = (
-				9C3A63DF1656DC9E004C7F73 /* VenmoIOSSDKSampleApp */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9C8BC7DC170DE19E00388EB3 /* libBTEncryption.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libBTEncryption.a;
-			remoteRef = 9C8BC7DB170DE19E00388EB3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C8BC7DE170DE19E00388EB3 /* BTEncryptionTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BTEncryptionTests.octest;
-			remoteRef = 9C8BC7DD170DE19E00388EB3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C8BC7E0170DE19E00388EB3 /* libBTPayment.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libBTPayment.a;
-			remoteRef = 9C8BC7DF170DE19E00388EB3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C8BC7E2170DE19E00388EB3 /* BTPaymentTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BTPaymentTests.octest;
-			remoteRef = 9C8BC7E1170DE19E00388EB3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C8BC7E4170DE19E00388EB3 /* SampleCheckout.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SampleCheckout.app;
-			remoteRef = 9C8BC7E3170DE19E00388EB3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C8BC7E6170DE19E00388EB3 /* SampleCheckoutTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SampleCheckoutTests.octest;
-			remoteRef = 9C8BC7E5170DE19E00388EB3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C8BC7E8170DE19E00388EB3 /* BraintreeResources.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BraintreeResources.bundle;
-			remoteRef = 9C8BC7E7170DE19E00388EB3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		9C3A63DE1656DC9E004C7F73 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C8BC7F8170DE28800388EB3 /* VenmoTouchResources.bundle in Resources */,
-				9C8BC7F7170DE28500388EB3 /* BraintreeResources.bundle in Resources */,
-				9C3A63EF1656DC9E004C7F73 /* InfoPlist.strings in Resources */,
-				9C3A63F71656DC9E004C7F73 /* Default.png in Resources */,
-				9C3A63F91656DC9E004C7F73 /* Default@2x.png in Resources */,
-				9C3A63FB1656DC9E004C7F73 /* Default-568h@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		9C3A63DC1656DC9E004C7F73 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C8BC7E9170DE27500388EB3 /* BTPayment-Prefix.pch in Sources */,
-				9C8BC7EA170DE27500388EB3 /* BTPaymentActivityOverlayView.h in Sources */,
-				9C8BC7EB170DE27500388EB3 /* BTPaymentActivityOverlayView.m in Sources */,
-				9C8BC7EC170DE27500388EB3 /* BTPaymentCardType.h in Sources */,
-				9C8BC7ED170DE27500388EB3 /* BTPaymentCardType.m in Sources */,
-				9C8BC7EE170DE27500388EB3 /* BTPaymentCardUtils.h in Sources */,
-				9C8BC7EF170DE27500388EB3 /* BTPaymentCardUtils.m in Sources */,
-				9C8BC7F0170DE27500388EB3 /* BTPaymentFormTextField.h in Sources */,
-				9C8BC7F1170DE27500388EB3 /* BTPaymentFormTextField.m in Sources */,
-				9C8BC7F2170DE27500388EB3 /* BTPaymentFormView.h in Sources */,
-				9C8BC7F3170DE27500388EB3 /* BTPaymentFormView.m in Sources */,
-				9C8BC7F4170DE27500388EB3 /* BTPaymentViewController.h in Sources */,
-				9C8BC7F5170DE27500388EB3 /* BTPaymentViewController.m in Sources */,
-				9C3A63F11656DC9E004C7F73 /* main.m in Sources */,
-				9C3A63F51656DC9E004C7F73 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9C3A63ED1656DC9E004C7F73 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C3A63EE1656DC9E004C7F73 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9C8BC77C170DE19E00388EB3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C8BC77D170DE19E00388EB3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9C8BC7B2170DE19E00388EB3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C8BC7B3170DE19E00388EB3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9C8BC7B9170DE19E00388EB3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C8BC7BA170DE19E00388EB3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9C8BC7BB170DE19E00388EB3 /* SCViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C8BC7BC170DE19E00388EB3 /* en */,
-			);
-			name = SCViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		9C8BC7BD170DE19E00388EB3 /* SCViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C8BC7BE170DE19E00388EB3 /* en */,
-			);
-			name = SCViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		9C8BC7C7170DE19E00388EB3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C8BC7C8170DE19E00388EB3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		9C3A64021656DC9E004C7F73 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		9C3A64031656DC9E004C7F73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9C3A64051656DC9E004C7F73 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads/braintree_ios/venmo-touch\"",
-					"\"$(SRCROOT)/braintree_ios/venmo-touch\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Prefix.pch";
-				INFOPLIST_FILE = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Libraries/Venmo SDK\"",
-				);
-				PRODUCT_NAME = VenmoIOSSDKSampleApp;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		9C3A64061656DC9E004C7F73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads/braintree_ios/venmo-touch\"",
-					"\"$(SRCROOT)/braintree_ios/venmo-touch\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Prefix.pch";
-				INFOPLIST_FILE = "VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Libraries/Venmo SDK\"",
-				);
-				PRODUCT_NAME = VenmoIOSSDKSampleApp;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		9C3A63DA1656DC9E004C7F73 /* Build configuration list for PBXProject "VenmoIOSSDKSampleApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C3A64021656DC9E004C7F73 /* Debug */,
-				9C3A64031656DC9E004C7F73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C3A64041656DC9E004C7F73 /* Build configuration list for PBXNativeTarget "VenmoIOSSDKSampleApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C3A64051656DC9E004C7F73 /* Debug */,
-				9C3A64061656DC9E004C7F73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 9C3A63D71656DC9E004C7F73 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0351CF446B1E462AB1AA72A4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>0DB43D6A344C4625B78017A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F0125ED273E44820B2EF2B26</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>868C863F30484ABEA92B9107</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9C3A63D51656DC9E004C7F73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C3A63EA1656DC9E004C7F73</string>
+				<string>9C3A63E31656DC9E004C7F73</string>
+				<string>9C3A63E11656DC9E004C7F73</string>
+				<string>CF4D7D359CF94447A27E5EA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63D71656DC9E004C7F73</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Venmo</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>9C3A63DA1656DC9E004C7F73</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>9C3A63D51656DC9E004C7F73</string>
+			<key>productRefGroup</key>
+			<string>9C3A63E11656DC9E004C7F73</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>9C3A63DF1656DC9E004C7F73</string>
+			</array>
+		</dict>
+		<key>9C3A63DA1656DC9E004C7F73</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9C3A64021656DC9E004C7F73</string>
+				<string>9C3A64031656DC9E004C7F73</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9C3A63DC1656DC9E004C7F73</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9C3A63F11656DC9E004C7F73</string>
+				<string>9C3A63F51656DC9E004C7F73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9C3A63DD1656DC9E004C7F73</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9C3A64351656E141004C7F73</string>
+				<string>9C8BC634170DDE8C00388EB3</string>
+				<string>9C3A63E51656DC9E004C7F73</string>
+				<string>9C3A63E71656DC9E004C7F73</string>
+				<string>9C3A63E91656DC9E004C7F73</string>
+				<string>0DB43D6A344C4625B78017A1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9C3A63DE1656DC9E004C7F73</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9C3A63EF1656DC9E004C7F73</string>
+				<string>9C3A63F71656DC9E004C7F73</string>
+				<string>9C3A63F91656DC9E004C7F73</string>
+				<string>9C3A63FB1656DC9E004C7F73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9C3A63DF1656DC9E004C7F73</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9C3A64041656DC9E004C7F73</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0351CF446B1E462AB1AA72A4</string>
+				<string>9C3A63DC1656DC9E004C7F73</string>
+				<string>9C3A63DD1656DC9E004C7F73</string>
+				<string>9C3A63DE1656DC9E004C7F73</string>
+				<string>868C863F30484ABEA92B9107</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>VenmoIOSSDKSampleApp</string>
+			<key>productName</key>
+			<string>VenmoIOSSDKSampleApp</string>
+			<key>productReference</key>
+			<string>9C3A63E01656DC9E004C7F73</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>9C3A63E01656DC9E004C7F73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>VenmoIOSSDKSampleApp.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9C3A63E11656DC9E004C7F73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C3A63E01656DC9E004C7F73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63E31656DC9E004C7F73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C3A64341656E141004C7F73</string>
+				<string>9C3A63E41656DC9E004C7F73</string>
+				<string>9C3A63E61656DC9E004C7F73</string>
+				<string>9C3A63E81656DC9E004C7F73</string>
+				<string>9C8BC633170DDE8C00388EB3</string>
+				<string>F0125ED273E44820B2EF2B26</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63E41656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9C3A63E51656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63E41656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63E61656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9C3A63E71656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63E61656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63E81656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9C3A63E91656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63E81656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63EA1656DC9E004C7F73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C3A63F31656DC9E004C7F73</string>
+				<string>9C3A63F41656DC9E004C7F73</string>
+				<string>9C3A63EB1656DC9E004C7F73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>VenmoIOSSDKSampleApp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63EB1656DC9E004C7F73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C3A63EC1656DC9E004C7F73</string>
+				<string>9C3A63ED1656DC9E004C7F73</string>
+				<string>9C3A63F01656DC9E004C7F73</string>
+				<string>9C3A63F21656DC9E004C7F73</string>
+				<string>9C3A63F61656DC9E004C7F73</string>
+				<string>9C3A63F81656DC9E004C7F73</string>
+				<string>9C3A63FA1656DC9E004C7F73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63EC1656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>VenmoIOSSDKSampleApp-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63ED1656DC9E004C7F73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C3A63EE1656DC9E004C7F73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63EE1656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63EF1656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63ED1656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63F01656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63F11656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63F01656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63F21656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VenmoIOSSDKSampleApp-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63F31656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63F41656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63F51656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63F41656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63F61656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63F71656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63F61656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63F81656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63F91656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63F81656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A63FA1656DC9E004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3A63FB1656DC9E004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A63FA1656DC9E004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C3A64021656DC9E004C7F73</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>5.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9C3A64031656DC9E004C7F73</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>5.0</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9C3A64041656DC9E004C7F73</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9C3A64051656DC9E004C7F73</string>
+				<string>9C3A64061656DC9E004C7F73</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9C3A64051656DC9E004C7F73</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>CF4D7D359CF94447A27E5EA0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)/../../../Downloads/braintree_ios/venmo-touch"</string>
+					<string>"$(SRCROOT)/braintree_ios/venmo-touch"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)/Libraries/Venmo SDK"</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>VenmoIOSSDKSampleApp</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9C3A64061656DC9E004C7F73</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>CF4D7D359CF94447A27E5EA0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)/../../../Downloads/braintree_ios/venmo-touch"</string>
+					<string>"$(SRCROOT)/braintree_ios/venmo-touch"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>VenmoIOSSDKSampleApp/VenmoIOSSDKSampleApp-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)/Libraries/Venmo SDK"</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>VenmoIOSSDKSampleApp</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9C3A64341656E141004C7F73</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Security.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Security.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9C3A64351656E141004C7F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C3A64341656E141004C7F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9C8BC633170DDE8C00388EB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9C8BC634170DDE8C00388EB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C8BC633170DDE8C00388EB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CF4D7D359CF94447A27E5EA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>F0125ED273E44820B2EF2B26</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>9C3A63D71656DC9E004C7F73</string>
+</dict>
+</plist>
