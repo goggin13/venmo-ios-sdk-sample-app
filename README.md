@@ -12,7 +12,7 @@ This sample application runs in Braintree's Sandbox testing environment. It uses
 To run the sample application:
 
 1. Install CocoaPods (if you haven't already)
-2. In the project's root directory, run 'pod install'
+2. In the project's root directory, run `pod install`
 3. Open `VenmoIOSSDKSampleApp.xcworkspace`
 4. `Run` the application
 
